@@ -7,23 +7,24 @@
 				crossorigin= "anonymous"></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="Description" content="Convert length measurements between centimeters and feet with our easy-to-use cm-to-ft converter page. Get accurate conversions in seconds for all your measurement needs. Perfect for DIY projects, woodworking, or construction. Try it now and simplify your cm-to-ft conversions with ease.">
 
         <!--=============== FAVICON ===============-->
         <link rel="shortcut icon" href="Img/bx-calculator.png" type="image/x-icon">
 
         <!--=============== BOXICONS ===============-->
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
         
         <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="swiper-bundle.min.css">
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="length_converter.css">
 
-        <title>Cm to Feet</title>
+        <title>Centimeter to Feet Converter - Convert cm to ft</title>
     </head>
     <body>
-	<div class="background_img">
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
 			<nav class="nav container">
@@ -34,7 +35,7 @@
 				<div class="nav__menu">
 					<ul class="nav__list">
 						<li class="nav__item">
-							<a href="#home" class="nav__link">
+							<a href="#home" class="nav__link active-link">
 								<i class="bx bx-home-alt-2" ></i>
 								<span>Home</span>
 							</a>
@@ -63,10 +64,64 @@
 					</ul>
 				</div>
 			</nav>
-			
         </header>
-		
-<div class="unit_container">
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+					<div class="home__data">
+						<h1 class="home__title">
+							Discover <br> The Most Suitable <br> Length Converter
+						</h1>
+						<p class="home__discription">
+							Convert any unit with ease, enjoy the technology
+						</p>
+						
+						
+						<form action="" class="home__search">
+							<i class="bx bx-map"></i>
+							<input type="search" placeholder="Search by Topic..." class="home__search_input">
+							<button class="button">Search</button>
+						</form>
+						
+						<div class="home__value">
+							<div>
+								<h1 class="home__value-number">
+									20 <span>+</span>
+								
+								</h1>
+								<span class="home__value-description">
+									Premium <br> Calculators
+								
+								</span>
+							
+							</div>
+							<div>
+								<h1 class="home__value-number">
+									2K <span>+</span>
+								
+								</h1>
+								<span class="home__value-description">
+									Happy <br> Users
+								
+								</span>
+							
+							</div><div>
+								<h1 class="home__value-number">
+									9K <span>+</span>
+								
+								</h1>
+								<span class="home__value-description">
+									Premium <br> Product
+								
+								</span>
+							
+							</div>
+						
+						</div>
+						<div class="unit_container">
 	  <div class="length_converter">
 		<div class="title_container">
             <h2>Cm to Feet Converter</h2>
@@ -79,7 +134,7 @@
         </div>
 
         <!-- third section: unit container -->
-        <div class="unit_container">
+        <div class="unit_container2">
             <!-- left -->
             <div class="left">
                 <p>From</p>
@@ -119,62 +174,410 @@
         </div>
     </div>
 		</div>
-<p class="p">Converting between centimeters and feet is an important task in many fields, including fashion, architecture, and construction. At UnitCalculators, we offer a convenient tool for converting between centimeters and feet. One centimeter is equal to 0.0328084 feet, while one foot is equal to 30.48 centimeters. Knowing this conversion factor is crucial when converting between the two units. With our optimized converter tool, you can quickly and accurately convert centimeters to feet and feet to centimeters. Whether you need to convert the height of a model or measure the size of a room, our tool makes the process fast and easy. Our converter tool is designed to meet search engine optimization standards, ensuring that you can find the information you need quickly and efficiently. With UnitCalculators, you can get accurate and reliable conversions in just a few clicks.</p>
-		
-         <!--==================== POPULAR ====================-->
-            <section class="section" id="popular">
-               <h1>Converters</h1>
- <table width="100%" border="0" cellspacing="0" cellpadding="0" id="homelist">
-	<tbody><tr>
-		<td valign="top" width="50%">
-		<ul class="list1">
-  <a href="length-converter.html"><li>Length Converter</li></a>
-  <a href="mass-converter.html"><li>Mass Converter</li></a>
-  <a href="volume-converter.html"><li>Volume Converter</li></a>
-  <a href="time-converter.html"><li>Time Converter</li></a>
-  <a href="temperature-converter.html"><li>Temperature Converter</li></a>
-  <a href="area-converter.html"><li>Area Converter</li></a>
-		</ul>
-		</td>
-<td valign="top" width="50%">
-	<ul>
+					</div>
+				</div>
+
+					 
+            </section>
+          
+            <!--==================== POPULAR ====================-->
+            <section class="popular section" id="popular">
+               <div class="container3">
+				   <span class="section__subtitle">Best choice</span>
+				   <h2 class="section__title">
+				   Popular Converters<span>.</span></h2>
+				   
+				   <div class="popular__container swiper">
+					   <div class="swiper-wrapper">
+						   <article class="popular__card swiper-slide">
+						   <a href="length-converter.html">
+							   <img src="measuring-tape.png" alt="length" class="popular__img">
+						   </a>
+						   <div class="popular__data">
+							   <h2></h2>
+							   <h3 class="popular__title">
+								 Length Converter  
+							   </h3>
+							   <p class="popular__description">
+								   Convert Length Units
+							   </p>
+						   </div>
+						   </article>
+						   
+						   
+						   
+						   <article class="popular__card swiper-slide">
+						   <a href="mass-converter.html">
+							   <img src="weighing-machine.png" alt="mass" class="popular__img">
+						   </a>
+						   <div class="popular__data">
+							   <h2></h2>
+							   <h3 class="popular__title">
+								   Mass Converter
+							   </h3>
+							   <p class="popular__description">
+								   Convert Mass Units
+							   </p>
+						   </div>
+						   </article>
+						   
+						   
+						   
+							   <article class="popular__card swiper-slide">
+						   <a href="volume-converter.html">
+							   <img src="measure.png" alt="volume" class="popular__img">
+						   </a>
+						   <div class="popular__data">
+							   <h2></h2>
+							   <h3 class="popular__title">
+								   Volume Converter
+							   </h3>
+							   <p class="popular__description">
+								   Convert Volume Units
+							   </p>
+						   </div>
+						   </article>
+					   
+				   
+						   
+						   <article class="popular__card swiper-slide">
+						  <a href="area-converter.html"> 
+							  <img src="area-graph.png" alt="area" class="popular__img">
+						   </a>
+						   <div class="popular__data">
+							   <h2></h2>
+							   <h3 class="popular__title">
+								   Area Converter
+							   </h3>
+							   <p class="popular__description">
+								   Convert Area Units
+
+							   </p>
+						   </div>
+						   </article>
+						   
+						   
+						   
+						   <article class="popular__card swiper-slide">
+						   <a href="temperature-converter.html">
+							   <img src="high-temperature.png" alt="temperature" class="popular__img">
+						   </a>
+						   <div class="popular__data">
+							   <h2></h2>
+							   <h3 class="popular__title">
+								   Temperature Converter
+							   </h3>
+							   <p class="popular__description">
+								   Convert Temperature Units
+							   </p>
+						   </div>
+						   </article>
+						   
+						   
+						   
+						   <article class="popular__card swiper-slide">
+						   <a href="time-converter.html">
+							   <img src="stopwatch.png" alt="time" class="popular__img">
+						   </a>
+						   <div class="popular__data">
+							   <h2></h2>
+							   <h3 class="popular__title">
+								   Time Converter
+							   </h3>
+							   <p class="popular__description">
+								   Convert Time Units
+							   </p>
+						   </div>
+						   </article>
+						   
+						   
+						   
+					   </div>
+					   <div class="swiper-button-next" id="swiper-button-next">
+						   <i class="bx bxs-chevron-right"></i>
+					   </div>
+					   
+					   <div class="swiper-button-prev" id="swiper-button-prev">
+						   <i class="bx bxs-chevron-left"></i>
+					   </div>
+				   </div>
+				</div>
+				
+				<div class="value__container container grid">
+					<div class="value__images">
+						<div class="value__orbe"></div>
+						<div class="value__img">
+							<img src="dan-cristian-padure-zm1oNbYS7DY-unsplash.jpg" alt="value">
+							
+						</div>
+					</div>
+					<div class="value__content">
+						<div class="value__data">
+							<span class="section__subtitle">Popular Conversions</span>
+							<h2 class="section__title">The Most Searched Conversions<span>.</span>
+							</h2>
+							<p class="value__description">
+								We are always ready to help you to convert any unit
+							</p>
+						</div>
+						<div class="value__accordion">
+						<div class="value__accordion-item">
+							<header class="value__accordion-header">
+								<i class="bx bx-bar-chart-square"></i>
+								<h3 class="value__accordion-title">
+									Length Units
+								</h3>
+								<div class="value__accordion-arrow">
+								<i class="bx bxs-down-arrow"></i>
+								</div>
+							</header>
+							<div class="value__accordion-content">
+								<p class="value__accordion-description">
 		<li><a href="cm-to-in.html">cm to inches</a></li>
-		<li><a href="kg-to-lbs.html">kg to lbs</a></li>
-		<li><a href="c-to-f.html">celsius to fahrenheit</a></li>
 		<li><a href="mm-to-in.html">mm to inches</a></li>
 		<li><a href="m-to-ft.html">meters to feet</a></li>
 		<li><a href="km-to-mi.html">km to miles</a></li>
-		<li><a href="km-to-ft.html">km to ft</a></li>
 		<li><a href="cm-to-ft.html">cm to feet</a></li>
-		<li><a href="g-to-oz.html">grams to ounces</a></li>
 		<li><a href="in-to-ft.html">inches to feet</a></li>
-		<li><a href="l-to-gal.html">liters to gallons</a></li>
-		<li><a href="lbs-to-oz.html">pounds to ounces</a></li>
-		<li><a href="mph-to-kph.html">mph to kph</a></li>
-		<li><a href="ac-to-ft2.html">acres to square feet</a></li>
 		<li><a href="m-to-yd.html">meters to yards</a></li>
-		<li><a href="calculate-bmi.html">BMI Caclulator</a></li></ul></td>
-	</tr>
-</tbody></table>
- <h1 class="p">&nbsp;</h1>
- <h1 class="p">&nbsp;</h1>
- <h1 class="p">Welcome to UnitCalculators! Our site offers a quick and convenient way for people to convert any unit. Whether you need to convert weight, distance, temperature, or volume.</h1>
+								</p>
+							</div>
+							</div>
+						</div>
+						
+						<div class="value__accordion">
+						<div class="value__accordion-item">
+							<header class="value__accordion-header">
+								<i class="bx bx-bar-chart-square"></i>
+								<h3 class="value__accordion-title">
+									Mass Units
+								</h3>
+								<div class="value__accordion-arrow">
+								<i class="bx bxs-down-arrow"></i>
+								</div>
+							</header>
+							<div class="value__accordion-content">
+								<p class="value__accordion-description">
+		<li><a href="kg-to-lbs.html">kg to lbs</a></li>
+		<li><a href="g-to-oz.html">grams to ounces</a></li>
+		<li><a href="lbs-to-oz.html">pounds to ounces</a></li>
+								</p>
+							</div>
+							</div>
+						</div>
+						
+						<div class="value__accordion">
+						<div class="value__accordion-item">
+							<header class="value__accordion-header">
+								<i class="bx bx-bar-chart-square"></i>
+								<h3 class="value__accordion-title">
+									Volume Units
+								</h3>
+								<div class="value__accordion-arrow">
+								<i class="bx bxs-down-arrow"></i>
+								</div>
+							</header>
+							<div class="value__accordion-content">
+								<p class="value__accordion-description">
+	<li><a href="l-to-gal.html">liters to gallons</a></li>
+								</p>
+							</div>
+							</div>
+						</div>
+						
+						<div class="value__accordion">
+						<div class="value__accordion-item">
+							<header class="value__accordion-header">
+								<i class="bx bx-bar-chart-square"></i>
+								<h3 class="value__accordion-title">
+									Area Units
+								</h3>
+								<div class="value__accordion-arrow">
+								<i class="bx bxs-down-arrow"></i>
+								</div>
+							</header>
+							<div class="value__accordion-content">
+								<p class="value__accordion-description">
+<li><a href="ac-to-ft2.html">acres to square feet</a></li>
+								</p>
+							</div>
+							</div>
+						</div>
+							<div class="value__accordion">
+						<div class="value__accordion-item">
+							<header class="value__accordion-header">
+								<i class="bx bx-bar-chart-square"></i>
+								<h3 class="value__accordion-title">
+									Time Units
+								</h3>
+								<div class="value__accordion-arrow">
+								<i class="bx bxs-down-arrow"></i>
+								</div>
+							</header>
+							<div class="value__accordion-content">
+								<p class="value__accordion-description">
+								</p>
+							</div>
+							</div>
+						</div> 
+						
+	<div class="value__accordion">
+						<div class="value__accordion-item">
+							<header class="value__accordion-header">
+								<i class="bx bx-bar-chart-square"></i>
+								<h3 class="value__accordion-title">
+									Temperature Units
+								</h3>
+								<div class="value__accordion-arrow">
+								<i class="bx bxs-down-arrow"></i>
+								</div>
+							</header>
+							<div class="value__accordion-content">
+								<p class="value__accordion-description">
+<li><a href="c-to-f.html">celsius to fahrenheit</a></li>
+								</p>
+							</div>
+							</div>
+						</div>
+				<div class="value__accordion">
+						<div class="value__accordion-item">
+							<header class="value__accordion-header">
+								<i class="bx bx-bar-chart-square"></i>
+								<h3 class="value__accordion-title">
+									Acceleration Units
+								</h3>
+								<div class="value__accordion-arrow">
+								<i class="bx bxs-down-arrow"></i>
+								</div>
+							</header>
+							<div class="value__accordion-content">
+								<p class="value__accordion-description">
+<li><a href="mph-to-kph.html">mph to kph</a></li>
+								</p>
+							</div>
+							</div>
+						</div>
+						
+					<div class="value__accordion">
+						<div class="value__accordion-item">
+							<header class="value__accordion-header">
+								<i class="bx bx-bar-chart-square"></i>
+								<h3 class="value__accordion-title">
+									Other Tools
+								</h3>
+								<div class="value__accordion-arrow">
+								<i class="bx bxs-down-arrow"></i>
+								</div>
+							</header>
+							<div class="value__accordion-content">
+								<p class="value__accordion-description">
+<li><a href="calculate-bmi.html">BMI Calculator</a></li>
+								</p>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
             </section>
 
             <!--==================== VALUE ====================-->
             <section class="value section" id="value">
-<h3 class="p">Welcome to UnitCalculators! Our site offers a quick and convenient way for people to convert any unit. Whether you need to convert weight, distance, temperature, or volume.Thank you for considering supporting us on Patreon! Our mission is to provide high-quality and reliable unit conversion tools to people all around the world, free of charge. By becoming a patron, you are helping us to continue providing this service and improving it over time.
-  
-  Unit conversion can be a complicated and time-consuming process, especially when dealing with unfamiliar units or complex formulas. That's why we've made it our goal to simplify the process and make it accessible to everyone, regardless of their background or experience.
-  
-  Our site, UnitCalculators, is designed to provide users with accurate and efficient unit conversion tools for a wide range of units, from weight and distance to temperature and currency. We take pride in the fact that our tools are easy to use, reliable, and available at no cost to our users.
-  
-  However, in order to maintain and improve our site, we rely on the support of our patrons. By contributing to our Patreon campaign, you'll be helping us to cover the costs of hosting, maintenance, and development. With your support, we'll be able to continue providing high-quality unit conversion tools to people around the world.
-  
-  As a patron, you'll also get access to exclusive rewards, such as early access to new tools and features, personalized support, and the opportunity to suggest new features or improvements to the site. We value our patrons and are committed to providing them with a rewarding and fulfilling experience.
-  
-  In conclusion, we hope you'll consider supporting us on Patreon. By doing so, you'll be helping us to continue providing reliable and efficient unit conversion tools to people all around the world. We appreciate your support and look forward to continuing to serve you in the future.</h3>
-<a href="https://patreon.com/UnitCalculators?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link">Support us on Patreon</a>
+				<div class="value__container container grid">
+					<div class="value__images">
+						<div class="value__orbe"></div>
+						<div class="value__img">
+							<img src="vishwarajsinh-rana-_1fByLYHA_0-unsplash.jpg" alt="value">
+							
+						</div>
+					</div>
+					<div class="value__content">
+						<div class="value__data">
+							<span class="section__subtitle">Our Value</span>
+							<h2 class="section__title">Value We Give To You<span>.</span>
+							</h2>
+							<p class="value__description">
+								We are always read to help you to convert any unit
+							</p>
+						</div>
+						<div class="value__accordion">
+						<div class="value__accordion-item">
+							<header class="value__accordion-header">
+								<i class="bx bxs-x-square"></i>
+								<h3 class="value__accordion-title">
+									Not quantity, but quality
+								</h3>
+								<div class="value__accordion-arrow">
+								<i class="bx bxs-down-arrow"></i>
+								</div>
+							</header>
+							<div class="value__accordion-content">
+								<p class="value__accordion-description">
+									At UnitCalculators, we believe that when it comes to unit conversion, it's not just about quantity, but about quality as well. That's why our unit conversion site stands out from the rest. Our user-friendly interface and accurate calculations ensure that you get the precise conversions you need, every time. Plus, we offer a wide range of conversion categories, including length, weight, temperature, and more. Whether you're a student, professional, or just someone who needs to convert units on a daily basis, UnitCalculators is your go-to source for reliable and efficient conversions. So why settle for less when you can have quality? Try UnitCalculators today and experience the difference for yourself.
+								</p>
+							</div>
+							</div>
+						</div>
+						
+						<div class="value__accordion">
+						<div class="value__accordion-item">
+							<header class="value__accordion-header">
+								<i class="bx bxs-shield-x"></i>
+								<h3 class="value__accordion-title">
+									Prevent any miscalculation
+								</h3>
+								<div class="value__accordion-arrow">
+								<i class="bx bxs-down-arrow"></i>
+								</div>
+							</header>
+							<div class="value__accordion-content">
+								<p class="value__accordion-description">
+									At UnitCalculators, we understand the importance of accuracy when it comes to unit conversions. That's why we've designed our site to prevent any miscalculations. With our advanced algorithms and comprehensive database, you can trust that our conversions are reliable and precise. We also offer real-time results, so you can quickly and easily double-check your calculations. Additionally, our site is regularly updated to ensure that our conversions are up-to-date and accurate. Don't take chances with miscalculations - trust UnitCalculators for all your unit conversion needs.
+								</p>
+							</div>
+							</div>
+						</div>
+						
+						<div class="value__accordion">
+						<div class="value__accordion-item">
+							<header class="value__accordion-header">
+								<i class="bx bx-bar-chart-square"></i>
+								<h3 class="value__accordion-title">
+									Best calculators to convert units
+								</h3>
+								<div class="value__accordion-arrow">
+								<i class="bx bxs-down-arrow"></i>
+								</div>
+							</header>
+							<div class="value__accordion-content">
+								<p class="value__accordion-description">
+									UnitCalculators offers some of the best calculators to convert units. Our calculators are user-friendly and offer accurate results in real-time. Our site features a wide range of calculators that cover different categories such as length, weight, temperature, volume, and more. With our easy-to-use interface, you can quickly convert between different units without the hassle of manually calculating the conversion. Whether you're a student, professional, or just someone who needs to convert units regularly, our calculators are designed to meet your needs. Trust UnitCalculators for the best calculators to convert units and experience the ease and accuracy of our site today.
+								</p>
+							</div>
+							</div>
+						</div>
+						
+						<div class="value__accordion">
+						<div class="value__accordion-item">
+							<header class="value__accordion-header">
+								<i class="bx bxs-check-square"></i>
+								<h3 class="value__accordion-title">
+									Calculate with ease
+								</h3>
+								<div class="value__accordion-arrow">
+								<i class="bx bxs-down-arrow"></i>
+								</div>
+							</header>
+							<div class="value__accordion-content">
+								<p class="value__accordion-description">
+									At UnitCalculators, we believe that calculating should be easy and stress-free. That's why we've designed our site to make calculating with ease. Our user-friendly interface and intuitive design make it simple to convert between different units, no matter what category you're working in. We offer a wide range of conversion calculators, including length, weight, temperature, and more, all of which provide accurate results in real-time. With UnitCalculators, you can say goodbye to the frustration of manual calculations and let our site do the work for you. Whether you're a student, professional, or just someone who needs to calculate units regularly, our site is designed to make your life easier. Calculate with ease today on UnitCalculators.
+								</p>
+							</div>
+							</div>
+						</div>
+							 
+					</div>
+				</div>
+
             </section>
 
             <!--==================== CONTACT ====================-->
@@ -210,7 +613,44 @@
     </div>
   </div>
             </section>
-		</div>
-	</body>
+
+            <!--==================== SUBSCRIBE ====================-->
+            <section class="subscribe section">
+                <div class="subscribe_container">
+					<h1 class="subscribe__title">
+					Support Us on Patreon</h1>
+					<p class="subscribe__description">
+					Your support will be appreciated, 
+					and we will be making more tools for our users
+					</p>
+					<a href="https://patreon.com/UnitCalculators?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link" class="button subscribe__button">Support Us</a>
+				</div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <h3>©2023 | UnitCalculators</h3>
+			<a href="https://www.flaticon.com/free-icons/length" title="length icons">Length icons created by Freepik - Flaticon</a>
+			<a href="https://www.flaticon.com/free-icons/weighing-scale" title="weighing scale icons">Weighing scale icons created by Good Ware - Flaticon</a>
+			<a href="https://www.flaticon.com/free-icons/volume" title="volume icons">Volume icons created by Creaticca Creative Agency - Flaticon</a>
+			<a href="https://www.flaticon.com/free-icons/measure" title="measure icons">Measure icons created by Flat Icons - Flaticon</a>
+			<a href="https://www.flaticon.com/free-icons/temperature" title="temperature icons">Temperature icons created by Freepik - Flaticon</a>
+			<a href="https://www.flaticon.com/free-icons/time" title="time icons">Time icons created by Freepik - Flaticon</a>
+        </footer>
+
+
+        <!--========== SCROLL UP ==========-->
+
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src=""></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="main.js"></script>
+    </body>
 </html>
 <script src="cm_ft.js"></script>
