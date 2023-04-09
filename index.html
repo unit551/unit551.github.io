@@ -1,892 +1,1459 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-		<script src="https://kit.fontawesome.com/3e6491bf19.js"
-				crossorigin= "anonymous"></script>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="Description" content="UnitCalculators is your one-stop online resource for all your unit conversion needs. Our website offers a wide range of unit calculators for length, weight, temperature, volume, time, and more. With our easy-to-use tools, you can quickly and accurately convert between different units of measurement, such as meters to feet, kilograms to pounds, Celsius to Fahrenheit, and gallons to liters. Try out our unit calculators today and streamline your conversions with ease.">
+<html lang="en">
 
-        <!--=============== FAVICON ===============-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>UArticles - Learnt How To Make Your Page Optimal For SEO</title>
+  <meta name="title" content="Articles - Perosonal Blog Website">
+  <meta name="description" content="This is a blog html template made by codewithsadee">
+
+<!--=============== FAVICON ===============-->
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 
-        <!--=============== BOXICONS ===============-->
-        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
 
-        
-        <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="swiper-bundle.min.css">
+<body id="top">
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="main.css">
+  <!-- 
+    - #HEADER
+  -->
 
-        <title>UnitCalculators - Convert Units With Ease</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-			<nav class="nav container">
-				<a href="home.html" class="nav__logo">
-					UnitCalculators <i class="bx bxs-calculator"></i> 
-				</a>
-				
-				<div class="nav__menu">
-					<ul class="nav__list">
-						<li class="nav__item">
-							<a href="#home" class="nav__link active-link">
-								<i class="bx bx-home-alt-2" ></i>
-								<span>Home</span>
-							</a>
-						</li>
-						
-						<li class="nav__item">
-							<a href="#popular" class="nav__link">
-								<i class="bx bx-calculator"></i>
-								<span>Converters</span>
-							</a>
-						</li>
-						
-						<li class="nav__item">
-							<a href="#value" class="nav__link">
-								<i class="bx bx-award"></i>
-								<span>Theory</span>
-							</a>
-						</li>
-						
-						<li class="nav__item">
-							<a href="#contact" class="nav__link">
-								<i class="bx bx-phone"></i>
-								<span>Contact</span>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-        </header>
+  <header class="header" data-header>
+    <div class="container">
 
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                <div class="home__container container grid">
-					<div class="home__data">
-						<h1 class="home__title">
-							Discover <br> The Most Suitable <br> Unit Calculator
-						</h1>
-						<p class="home__discription">
-							Convert any unit with ease, enjoy the technology
-						</p>
-						
-						
-						<form action="" class="home__search">
-							<i class="bx bx-map"></i>
-							<input type="search" placeholder="Search by Topic..." class="home__search_input">
-							<button class="button">Search</button>
-						</form>
-						
-						<div class="home__value">
-							<div>
-								<h1 class="home__value-number">
-									20 <span>+</span>
-								
-								</h1>
-								<span class="home__value-description">
-									Premium <br> Converters
-								
-								</span>
-							
-							</div>
-							<div>
-								<h1 class="home__value-number">
-									2K <span>+</span>
-								
-								</h1>
-								<span class="home__value-description">
-									Happy <br> Users
-								
-								</span>
-							
-							</div><div>
-								<h1 class="home__value-number">
-									9K <span>+</span>
-								
-								</h1>
-								<span class="home__value-description">
-									Premium <br> Product
-								
-								</span>
-							
-							</div>
-						
-						</div>
-					</div>
-				</div>
-<div class="unit_container">
-	    <div class="length_converter">
-		<div class="title_container">
-            <h2>Length Converter</h2>
+      <a href="index.html" class="logo">
+       ||| UArticles
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="index.html" class="logo">
+            ||| UArticles
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
         </div>
 
-        <!-- second section: amount to be converted -->
-        <div class="amount_container">
-            <label for="amount2"><strong>Enter Amount</strong></label>
-          <input type="number" name="amount" id="amount_length">
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link hover-1" data-nav-toggler>Home</a>
+          </li>
+
+          <li>
+            <a href="#topics" class="navbar-link hover-1" data-nav-toggler>Topics</a>
+          </li>
+
+          <li>
+            <a href="#featured" class="navbar-link hover-1" data-nav-toggler>Featured Post</a>
+          </li>
+
+          <li>
+            <a href="#recent" class="navbar-link hover-1" data-nav-toggler>Recent Post</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link hover-1" data-nav-toggler>Contact</a>
+          </li>
+			<li>
+            <a href="home.html" class="navbar-link hover-1" data-nav-toggler>Unit Calculator</a>
+          </li>
+
+        </ul>
+
+        <div class="navbar-bottom">
+
+          <ul class="link-list">
+
+            <li>
+              <a href="home.html" class="navbar-bottom-link hover-1">Unit Calculator</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-bottom-link hover-1">All Articles</a>
+            </li>
+
+          </ul>
+
         </div>
 
-        <!-- third section: unit container -->
-        <div class="unit_container">
-            <!-- left -->
-            <div class="left">
-                <p>From</p>
-                <div class="select_container">
-                    <select name="from" id="from_length">
-                        <option value="Centimeter">Centimeter</option>
-                    </select>
+        <p class="copyright-text">
+          Copyright 2022 © Articles - Personal Blog Template.
+          Developed by codewithsadee
+        </p>
+
+      </nav>
+
+      <a href="#" class="btn btn-primary">Subscribe</a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <section class="hero" id="home" aria-label="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">Start To Explore</p>
+
+            <h1 class="headline headline-1 section-title">
+              Begin With<span class="span">UArticles</span>
+            </h1>
+
+            <p class="hero-text">
+              To make your website popular, you need to use adequate methods. 
+			  To know more about SEO and the details of it, read our articles!
+            </p>
+
+          </div>
+		  </div>
+      </section>
+
+
+
+      <section class="topics" id="topics" aria-labelledby="topic-label">
+        <div class="container">
+
+          <div class="card topic-card">
+
+            <div class="card-content">
+
+              <h2 class="headline headline-2 section-title card-title" id="topic-label">
+                Topics
+              </h2>
+
+              <p class="card-text">
+                Don't miss out on the latest news about SEO, Coding, New Methods...
+              </p>
+
+              <div class="btn-group">
+                <button class="btn-icon" aria-label="previous" data-slider-prev>
+                  <ion-icon name="arrow-back" aria-hidden="true"></ion-icon>
+                </button>
+
+                <button class="btn-icon" aria-label="next" data-slider-next>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
+
+            </div>
+
+            <div class="slider" data-slider>
+              <ul class="slider-list" data-slider-container>
+
+                <li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="carlos-muza-hpjSkU2UYSU-unsplash.jpg" width="507" height="618" loading="lazy" alt="SEO"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">SEO</span>
+
+                      <p class="slider-subtitle">3 Articles</p>
+                    </div>
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="oskar-yildiz-cOkpTiJMGzA-unsplash.jpg" width="507" height="618" loading="lazy" alt="Coding"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">Coding</span>
+
+                      <p class="slider-subtitle">4 Articles</p>
+                    </div>
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="cardmapr-nl-tvzykmBf3r0-unsplash.jpg" width="507" height="618" loading="lazy" alt="Youtube"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">Youtube</span>
+
+                      <p class="slider-subtitle">2 Articles</p>
+                    </div>
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="convert.png" width="507" height="618" loading="lazy" alt="Movie"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">Tools</span>
+
+                      <p class="slider-subtitle">2 Articles</p>
+                    </div>
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="sincerely-media-nGrfKmtwv24-unsplash.jpg" width="507" height="618" loading="lazy" alt="Book"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">Book Reviews</span>
+
+                      <p class="slider-subtitle">3 Articles</p>
+                    </div>
+
+                  </a>
+                </li>
+			
+				  
+				  <li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="javier-quesada-qYfwGVNJqSA-unsplash.jpg" width="507" height="618" loading="lazy" alt="Education"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">Education</span>
+
+                      <p class="slider-subtitle">3 Articles</p>
+                    </div>
+
+                  </a>
+                </li>
+			<li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="canva.jpg" width="507" height="618" loading="lazy" alt="Education"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">Design with Canva</span>
+
+                      <p class="slider-subtitle">1 Articles</p>
+                    </div>
+
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+
+    
+
+      <section class="section feature" aria-label="feature" id="featured">
+        <div class="container">
+
+          <h2 class="headline headline-2 section-title">
+            <span class="span">Editor's picked</span>
+          </h2>
+
+          <p class="section-text">
+            Featured and highly rated articles
+          </p>
+
+          <ul class="feature-list">
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="charlesdeluvio-leqrylJNYUQ-unsplash.jpg" width="1602" height="903" loading="lazy"
+                    alt="Google ranking" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#SEO</a>
+
+                      <a href="#" class="span hover-2">#Coding</a>
+                    </div>
+
+                    <div class="wrapper">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">3 mins read</span>
+                    </div>
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      What do you have to do in order to rank on the top of Google?
+                    </a>
+                  </h3>
+
+                  <div class="card-wrapper">
+
+                    <div class="profile-card">
+                   
+
+                      <div>
+                        <p class="card-title">Nurullah</p>
+
+                        <p class="card-subtitle">10 Apr 2023</p>
+                      </div>
+                    </div>
+
+                    <a href="#" class="card-btn">Read more</a>
+
+                  </div>
+
                 </div>
-            </div>
 
-            <!-- middle -->
-            <div class="middle">
-                <i class="fas fa-cog fa-spin" style="font-size:24px"></i>
-            </div>
+              </div>
+            </li>
 
-            <!-- right -->
-            <div class="right">
-                <p>To</p>
-                <div class="select_container to">
-                    <select name="to" id="to_length">
-                        <option value="Centimeter">Centimeter</option>
-                    </select>
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="weighing-machine.png" width="1602" height="903" loading="lazy"
+                    alt="Length Converter" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#SEO</a>
+
+                      <a href="#" class="span hover-2">#Coding</a>
+                    </div>
+
+                    <div class="wrapper">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">6 mins read</span>
+                    </div>
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      How to create website tools which can be used in a website? 
+                    </a>
+                  </h3>
+
+                  <div class="card-wrapper">
+
+                    <div class="profile-card">
+                        
+
+                      <div>
+                        <p class="card-title">Nurullah</p>
+
+                        <p class="card-subtitle">10 Apr 2023</p>
+                      </div>
+                    </div>
+
+                    <a href="#" class="card-btn">Read more</a>
+
+                  </div>
+
                 </div>
-            </div>
-        </div>
 
-        <!-- fourth section: formular display -->
-        <div class="formular_container">
-            <span class="title">formula:</span>
-            <span class="content_length"> Gives the same value.</span>
-        </div>
+              </div>
+            </li>
 
-        <!-- fifth section: result display -->
-        <div class="result_container">
-            <label for="result"><strong>Result</strong></label>
-            <input type="text" name="result" id="result_length">
-        </div>
-	    </div>
-	    <div class="converter">
-	    <div class="mass_converter">
-                <div class="title_container">
-					<h2>Mass Converter</h2>
-				</div>
-				
-			    <div class="amount_container">
-					<label for="amount">Enter Amount</label>
-					<input type="number" name="amount_mass" id="amount_mass">
-				</div>
-				
-				<div class="unit_container">
-					<div class="left">
-						<p>From</p>
-						<div class="select_container">
-							<select name="from_mass" id="from_mass">
-								<option value="Gram">Gram</option>
-							</select>
-						</div>
-					</div>
-					<div class="middle">
-						<li class="fas fa-cog fa-spin" style="font-size: 24px"></li>
-					</div>
-					<div class="right">
-						<p>To</p>
-						<div class="select_container to">
-							<select name="to_mass" id="to_mass">
-								<option value="Gram">Gram</option>
-							</select>
-						</div>
-					</div>
-				</div>
-				<div class="formular_container2">
-					<span class="title">formula:</span>
-					<span class="content_mass"> Gives the same value.</span>
-				</div>
-				
-				<div class="result_container">
-					<label for="result">Result</label>
-					<input type="text" name="result_mass" id="result_mass">
-				</div>
-		</div>
-	    </div>
-	    <div class="converter">
-	    <div class="volume_converter">
-                <div class="title_container">
-					<h2>Volume Converter</h2>
-				</div>
-				
-			    <div class="amount_container">
-					<label for="amount">Enter Amount</label>
-					<input type="number" name="amount_volume" id="amount_volume">
-				</div>
-				
-				<div class="unit_container">
-					<div class="left">
-						<p>From</p>
-						<div class="select_container">
-							<select name="from_volume" id="from_volume">
-								<option value="Cubic-Meter">Cubic-Meter</option>
-							</select>
-						</div>
-					</div>
-					<div class="middle">
-						<li class="fas fa-cog fa-spin" style="font-size: 24px"></li>
-					</div>
-					<div class="right">
-						<p>To</p>
-						<div class="select_container to">
-							<select name="to_volume" id="to_volume">
-								<option value="Cubic-Meter">Cubic-Meter</option>
-							</select>
-						</div>
-					</div>
-				</div>
-				<div class="formular_container">
-					<span class="title">formula:</span>
-					<span class="content_volume"> Gives the same value.</span>
-				</div>
-				
-				<div class="result_container">
-					<label for="result">Result</label>
-					<input type="text" name="result_volume" id="result_volume">
-				</div>
-		</div>
-	    </div>
-</div>
-<div class="unit_container">
-	    <div class="length_converter">
-		<div class="title_container">
-            <h2>Time Converter</h2>
-        </div>
+            <li>
+              <div class="card feature-card">
 
-        <!-- second section: amount to be converted -->
-        <div class="amount_container">
-            <label for="amount2"><strong>Enter Amount</strong></label>
-          <input type="number" name="amount" id="amount_time">
-        </div>
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="obi-pixel7propix-xA1l7OCKL4Q-unsplash.jpg" width="1602" height="903" loading="lazy"
+                    alt="Keyword Research" class="img-cover">
+                </figure>
 
-        <!-- third section: unit container -->
-        <div class="unit_container">
-            <!-- left -->
-            <div class="left">
-                <p>From</p>
-                <div class="select_container">
-                    <select name="from" id="from_time">
-                        <option value="Second">Second</option>
-                    </select>
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#SEO</a>
+
+                      <a href="#" class="span hover-2">#Site</a>
+                    </div>
+
+                    <div class="wrapper">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">6 mins read</span>
+                    </div>
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      How to find the suitable keywords for your pages?
+                    </a>
+                  </h3>
+
+                  <div class="card-wrapper">
+
+                    <div class="profile-card">
+                      <img src="./assets/images/author-1.png" width="48" height="48" loading="lazy" alt="Joseph"
+                        class="profile-banner">
+
+                      <div>
+                        <p class="card-title">Nurullah</p>
+
+                        <p class="card-subtitle">10 Apr 2023</p>
+                      </div>
+                    </div>
+
+                    <a href="#" class="card-btn">Read more</a>
+
+                  </div>
+
                 </div>
-            </div>
 
-            <!-- middle -->
-            <div class="middle">
-                <i class="fas fa-cog fa-spin" style="font-size:24px"></i>
-            </div>
+              </div>
+            </li>
 
-            <!-- right -->
-            <div class="right">
-                <p>To</p>
-                <div class="select_container to">
-                    <select name="to" id="to_time">
-                        <option value="Second">Second</option>
-                    </select>
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="./assets/images/featured-4.png" width="1602" height="903" loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#Design</a>
+
+                      <a href="#" class="span hover-2">#Movie</a>
+                    </div>
+
+                    <div class="wrapper">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">6 mins read</span>
+                    </div>
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Self-observation is the first step of inner unfolding
+                    </a>
+                  </h3>
+
+                  <div class="card-wrapper">
+
+                    <div class="profile-card">
+                      <img src="./assets/images/author-1.png" width="48" height="48" loading="lazy" alt="Joseph"
+                        class="profile-banner">
+
+                      <div>
+                        <p class="card-title">Joseph</p>
+
+                        <p class="card-subtitle">25 Nov 2022</p>
+                      </div>
+                    </div>
+
+                    <a href="#" class="card-btn">Read more</a>
+
+                  </div>
+
                 </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="./assets/images/featured-5.png" width="1602" height="903" loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#Design</a>
+
+                      <a href="#" class="span hover-2">#Movie</a>
+                    </div>
+
+                    <div class="wrapper">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">6 mins read</span>
+                    </div>
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Self-observation is the first step of inner unfolding
+                    </a>
+                  </h3>
+
+                  <div class="card-wrapper">
+
+                    <div class="profile-card">
+                      <img src="./assets/images/author-1.png" width="48" height="48" loading="lazy" alt="Joseph"
+                        class="profile-banner">
+
+                      <div>
+                        <p class="card-title">Joseph</p>
+
+                        <p class="card-subtitle">25 Nov 2022</p>
+                      </div>
+                    </div>
+
+                    <a href="#" class="card-btn">Read more</a>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <a href="#" class="btn btn-secondary">
+            <span class="span">Show More Posts</span>
+
+            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+          </a>
+
+        </div>
+
+        <img src="./assets/images/shadow-3.svg" width="500" height="1500" loading="lazy" alt="" class="feature-bg">
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #POPULAR TAGS
+      -->
+
+      <section class="tags" aria-labelledby="tag-label">
+        <div class="container">
+
+          <h2 class="headline headline-2 section-title" id="tag-label">
+            <span class="span">Popular Tags</span>
+          </h2>
+
+          <p class="section-text">
+            Most searched keywords
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <button class="card tag-btn">
+                <img src="./assets/images/tag1.png" width="32" height="32" loading="lazy" alt="Travel">
+
+                <p class="btn-text">Travel</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img src="./assets/images/tag2.png" width="32" height="32" loading="lazy" alt="Culture">
+
+                <p class="btn-text">Culture</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img src="./assets/images/tag3.png" width="32" height="32" loading="lazy" alt="Lifestyle">
+
+                <p class="btn-text">Lifestyle</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img src="./assets/images/tag4.png" width="32" height="32" loading="lazy" alt="Fashion">
+
+                <p class="btn-text">Fashion</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img src="./assets/images/tag5.png" width="32" height="32" loading="lazy" alt="Food">
+
+                <p class="btn-text">Food</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img src="./assets/images/tag6.png" width="32" height="32" loading="lazy" alt="Space">
+
+                <p class="btn-text">Space</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img src="./assets/images/tag7.png" width="32" height="32" loading="lazy" alt="Animal">
+
+                <p class="btn-text">Animal</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img src="./assets/images/tag8.png" width="32" height="32" loading="lazy" alt="Minimal">
+
+                <p class="btn-text">Minimal</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img src="./assets/images/tag9.png" width="32" height="32" loading="lazy" alt="Interior">
+
+                <p class="btn-text">Interior</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img src="./assets/images/tag10.png" width="32" height="32" loading="lazy" alt="Plant">
+
+                <p class="btn-text">Plant</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img src="./assets/images/tag11.png" width="32" height="32" loading="lazy" alt="Nature">
+
+                <p class="btn-text">Nature</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img src="./assets/images/tag12.png" width="32" height="32" loading="lazy" alt="Business">
+
+                <p class="btn-text">Business</p>
+              </button>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #RECENT POST
+      -->
+
+      <section class="section recent-post" id="recent" aria-labelledby="recent-label">
+        <div class="container">
+
+          <div class="post-main">
+
+            <h2 class="headline headline-2 section-title">
+              <span class="span">Recent posts</span>
+            </h2>
+
+            <p class="section-text">
+              Don't miss the latest trends
+            </p>
+
+            <ul class="grid-list">
+
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                    <img src="./assets/images/recent-post-1.jpg" width="271" height="258" loading="lazy"
+                      alt="Helpful Tips for Working from Home as a Freelancer" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge">Working Tips</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">Helpful Tips for Working from Home as a Freelancer</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
+                      roadrunner flapped lynx far that and jeepers giggled far and far
+                    </p>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2"># Travel</a>
+
+                        <a href="#" class="span hover-2"># Lifestyle</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span">3 mins read</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                    <img src="./assets/images/recent-post-2.jpg" width="271" height="258" loading="lazy"
+                      alt="Helpful Tips for Working from Home as a Freelancer" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge">Working Tips</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">Helpful Tips for Working from Home as a Freelancer</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
+                      roadrunner flapped lynx far that and jeepers giggled far and far
+                    </p>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2"># Travel</a>
+
+                        <a href="#" class="span hover-2"># Lifestyle</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span">3 mins read</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                    <img src="./assets/images/recent-post-3.jpg" width="271" height="258" loading="lazy"
+                      alt="Helpful Tips for Working from Home as a Freelancer" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge">Working Tips</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">Helpful Tips for Working from Home as a Freelancer</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
+                      roadrunner flapped lynx far that and jeepers giggled far and far
+                    </p>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2"># Travel</a>
+
+                        <a href="#" class="span hover-2"># Lifestyle</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span">3 mins read</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                    <img src="./assets/images/recent-post-4.jpg" width="271" height="258" loading="lazy"
+                      alt="Helpful Tips for Working from Home as a Freelancer" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge">Working Tips</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">Helpful Tips for Working from Home as a Freelancer</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
+                      roadrunner flapped lynx far that and jeepers giggled far and far
+                    </p>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2"># Travel</a>
+
+                        <a href="#" class="span hover-2"># Lifestyle</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span">3 mins read</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                    <img src="./assets/images/recent-post-5.jpg" width="271" height="258" loading="lazy"
+                      alt="Helpful Tips for Working from Home as a Freelancer" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge">Working Tips</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">Helpful Tips for Working from Home as a Freelancer</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
+                      roadrunner flapped lynx far that and jeepers giggled far and far
+                    </p>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2"># Travel</a>
+
+                        <a href="#" class="span hover-2"># Lifestyle</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span">3 mins read</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+            <nav aria-label="pagination" class="pagination">
+
+              <a href="#" class="pagination-btn" aria-label="previous page">
+                <ion-icon name="arrow-back" aria-hidden="true"></ion-icon>
+              </a>
+
+              <a href="#" class="pagination-btn">1</a>
+              <a href="#" class="pagination-btn">2</a>
+              <a href="#" class="pagination-btn">3</a>
+              <a href="#" class="pagination-btn" aria-label="more page">...</a>
+
+              <a href="#" class="pagination-btn" aria-label="next page">
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </a>
+
+            </nav>
+
+          </div>
+
+          <div class="post-aside grid-list">
+
+            <div class="card aside-card">
+
+              <h3 class="headline headline-2 aside-title">
+                <span class="span">Popular Posts</span>
+              </h3>
+
+              <ul class="popular-list">
+
+                <li>
+                  <div class="popular-card">
+
+                    <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                      <img src="./assets/images/popular-post-1.jpg" width="64" height="64" loading="lazy"
+                        alt="Creating is a privilege but it’s also a gift" class="img-cover">
+                    </figure>
+
+                    <div class="card-content">
+
+                      <h4 class="headline headline-4 card-title">
+                        <a href="#" class="link hover-2">Creating is a privilege but it’s also a gift</a>
+                      </h4>
+
+                      <div class="warpper">
+                        <p class="card-subtitle">15 mins read</p>
+
+                        <time class="publish-date" datetime="2022-04-15">15 April 2022</time>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="popular-card">
+
+                    <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                      <img src="./assets/images/popular-post-2.jpg" width="64" height="64" loading="lazy"
+                        alt="Being unique is better than being perfect" class="img-cover">
+                    </figure>
+
+                    <div class="card-content">
+
+                      <h4 class="headline headline-4 card-title">
+                        <a href="#" class="link hover-2">Being unique is better than being perfect</a>
+                      </h4>
+
+                      <div class="warpper">
+                        <p class="card-subtitle">15 mins read</p>
+
+                        <time class="publish-date" datetime="2022-04-15">15 April 2022</time>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="popular-card">
+
+                    <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                      <img src="./assets/images/popular-post-3.jpg" width="64" height="64" loading="lazy"
+                        alt="Every day, in every city and town across the country" class="img-cover">
+                    </figure>
+
+                    <div class="card-content">
+
+                      <h4 class="headline headline-4 card-title">
+                        <a href="#" class="link hover-2">Every day, in every city and town across the country</a>
+                      </h4>
+
+                      <div class="warpper">
+                        <p class="card-subtitle">15 mins read</p>
+
+                        <time class="publish-date" datetime="2022-04-15">15 April 2022</time>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="popular-card">
+
+                    <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                      <img src="./assets/images/popular-post-4.jpg" width="64" height="64" loading="lazy"
+                        alt="Your voice, your mind, your story, your vision" class="img-cover">
+                    </figure>
+
+                    <div class="card-content">
+
+                      <h4 class="headline headline-4 card-title">
+                        <a href="#" class="link hover-2">Your voice, your mind, your story, your vision</a>
+                      </h4>
+
+                      <div class="warpper">
+                        <p class="card-subtitle">15 mins read</p>
+
+                        <time class="publish-date" datetime="2022-04-15">15 April 2022</time>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="popular-card">
+
+                    <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                      <img src="./assets/images/popular-post-2.jpg" width="64" height="64" loading="lazy"
+                        alt="Being unique is better than being perfect" class="img-cover">
+                    </figure>
+
+                    <div class="card-content">
+
+                      <h4 class="headline headline-4 card-title">
+                        <a href="#" class="link hover-2">Being unique is better than being perfect</a>
+                      </h4>
+
+                      <div class="warpper">
+                        <p class="card-subtitle">15 mins read</p>
+
+                        <time class="publish-date" datetime="2022-04-15">15 April 2022</time>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </li>
+
+              </ul>
+
             </div>
+
+            <div class="card aside-card">
+
+              <h3 class="headline headline-2 aside-title">
+                <span class="span">Last Comment</span>
+              </h3>
+
+              <ul class="comment-list">
+
+                <li>
+                  <div class="comment-card">
+
+                    <blockquote class="card-text">
+                      “ Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
+                      roadrunner “
+                    </blockquote>
+
+                    <div class="profile-card">
+                      <figure class="profile-banner img-holder">
+                        <img src="./assets/images/author-6.png" width="32" height="32" loading="lazy" alt="Jane Cooper">
+                      </figure>
+
+                      <div>
+                        <p class="card-title">Jane Cooper</p>
+
+                        <time class="card-date" datetime="2022-04-15">15 April 2022</time>
+                      </div>
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="comment-card">
+
+                    <blockquote class="card-text">
+                      “ Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
+                      roadrunner “
+                    </blockquote>
+
+                    <div class="profile-card">
+                      <figure class="profile-banner img-holder">
+                        <img src="./assets/images/author-7.png" width="32" height="32" loading="lazy" alt="Katen Doe">
+                      </figure>
+
+                      <div>
+                        <p class="card-title">Katen Doe</p>
+
+                        <time class="card-date" datetime="2022-04-15">15 April 2022</time>
+                      </div>
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="comment-card">
+
+                    <blockquote class="card-text">
+                      “ Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
+                      roadrunner “
+                    </blockquote>
+
+                    <div class="profile-card">
+                      <figure class="profile-banner img-holder">
+                        <img src="./assets/images/author-8.png" width="32" height="32" loading="lazy"
+                          alt="Barbara Cartland">
+                      </figure>
+
+                      <div>
+                        <p class="card-title">Barbara Cartland</p>
+
+                        <time class="card-date" datetime="2022-04-15">15 April 2022</time>
+                      </div>
+                    </div>
+
+                  </div>
+                </li>
+
+              </ul>
+
+            </div>
+
+            <div class="card aside-card insta-card">
+
+              <a href="#" class="logo">
+                <img src="./assets/images/logo.svg" width="119" height="37" loading="lazy" alt="Articles logo">
+              </a>
+
+              <p class="card-text">
+                Follow us on instagram
+              </p>
+
+              <ul class="insta-list">
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="./assets/images/insta-post-1.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="./assets/images/insta-post-2.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="./assets/images/insta-post-3.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="./assets/images/insta-post-4.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="./assets/images/insta-post-5.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="./assets/images/insta-post-6.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="./assets/images/insta-post-7.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="./assets/images/insta-post-8.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="./assets/images/insta-post-9.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer>
+    <div class="container">
+
+      <div class="card footer">
+
+        <div class="section footer-top">
+
+          <div class="footer-brand">
+
+            <a href="#" class="logo">
+              <img src="./assets/images/logo.svg" width="119" height="37" loading="lazy" alt="Articles logo">
+            </a>
+
+            <p class="footer-text">
+              When an unknown prnoto sans took a galley and scrambled it to make specimen book not only five When an
+              unknown prnoto sans took a galley and scrambled it to five centurie.
+            </p>
+
+            <p class="footer-list-title">Address</p>
+
+            <address class="footer-text address">
+              123 Main Street <br>
+              New York, NY 10001
+            </address>
+
+          </div>
+
+          <div class="footer-list">
+
+            <p class="footer-list-title">Categories</p>
+
+            <ul>
+
+              <li>
+                <a href="#" class="footer-link hover-2">Action</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link hover-2">Business</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link hover-2">Adventure</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link hover-2">Canada</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link hover-2">America</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link hover-2">Curiosity</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link hover-2">Animal</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link hover-2">Dental</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link hover-2">Biology</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link hover-2">Design</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link hover-2">Breakfast</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link hover-2">Dessert</a>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="footer-list">
+
+            <p class="footer-list-title">Newsletter</p>
+
+            <p class="footer-text">
+              Sign up to be first to receive the latest stories inspiring us, case studies, and industry news.
+            </p>
+
+            <div class="input-wrapper">
+              <input type="text" name="name" placeholder="Your name" required class="input-field" autocomplete="off">
+
+              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div class="input-wrapper">
+              <input type="email" name="email_address" placeholder="Emaill address" required class="input-field"
+                autocomplete="off">
+
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+            </div>
+
+            <a href="#" class="btn btn-primary">
+              <span class="span">Subscribe</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
         </div>
 
-        <!-- fourth section: formular display -->
-        <div class="formular_container">
-            <span class="title">formula:</span>
-            <span class="content_time"> Gives the same value.</span>
+        <div class="footer-bottom">
+
+          <p class="copyright">
+            &copy; <a href="#" class="copyright-link"></a>
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+
+                <span class="span">Twitter</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+
+                <span class="span">LinkedIn</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+
+                <span class="span">Instagram</span>
+              </a>
+            </li>
+
+          </ul>
+
         </div>
 
-        <!-- fifth section: result display -->
-        <div class="result_container">
-            <label for="result"><strong>Result</strong></label>
-            <input type="text" name="result" id="result_time">
-        </div>
-	    </div>
-	    <div class="converter">
-	    <div class="mass_converter">
-                <div class="title_container">
-					<h2>Temperature Converter</h2>
-				</div>
-				
-			    <div class="amount_container">
-					<label for="amount">Enter Amount</label>
-					<input type="number" name="amount_temperature" id="amount_temperature">
-				</div>
-				
-				<div class="unit_container">
-					<div class="left">
-						<p>From</p>
-						<div class="select_container">
-							<select name="from_temperature" id="from_temperature">
-								<option value="Celsius">Celsius</option>
-							</select>
-						</div>
-					</div>
-					<div class="middle">
-						<li class="fas fa-cog fa-spin" style="font-size: 24px"></li>
-					</div>
-					<div class="right">
-						<p>To</p>
-						<div class="select_container to">
-							<select name="to_temperature" id="to_temperature">
-								<option value="Celsius">Celsius</option>
-							</select>
-						</div>
-					</div>
-				</div>
-				<div class="formular_container2">
-					<span class="title">formula:</span>
-					<span class="content_temperature"> Gives the same value.</span>
-				</div>
-				
-				<div class="result_container">
-					<label for="result">Result</label>
-					<input type="text" name="result_temperature" id="result_temperature">
-				</div>
-		</div>
-	    </div>
-	    <div class="converter">
-	    <div class="volume_converter">
-                <div class="title_container">
-					<h2>Area Converter</h2>
-				</div>
-				
-			    <div class="amount_container">
-					<label for="amount">Enter Amount</label>
-					<input type="number" name="amount_area" id="amount_area">
-				</div>
-				
-				<div class="unit_container">
-					<div class="left">
-						<p>From</p>
-						<div class="select_container">
-							<select name="from_area" id="from_area">
-								<option value="Square-Meter">Square-Meter</option>
-							</select>
-						</div>
-					</div>
-					<div class="middle">
-						<li class="fas fa-cog fa-spin" style="font-size: 24px"></li>
-					</div>
-					<div class="right">
-						<p>To</p>
-						<div class="select_container to">
-							<select name="to_area" id="to_area">
-								<option value="Square-Meter">Square-Meter</option>
-							</select>
-						</div>
-					</div>
-				</div>
-				<div class="formular_container">
-
-					<span class="title">formula:</span>
-					<span class="content_area"> Gives the same value.</span>
-				</div>
-				
-				<div class="result_container">
-					<label for="result">Result</label>
-					<input type="text" name="result_arae" id="result_area">
-				</div>
-		</div>
-	    </div>
-</div>
-					 
-            </section>
-          
-            <!--==================== POPULAR ====================-->
-            <section class="popular section" id="popular">
-               <div class="container3">
-				   <span class="section__subtitle">Best choice</span>
-				   <h2 class="section__title">
-				   Popular Converters<span>.</span></h2>
-				   
-				   <div class="popular__container swiper">
-					   <div class="swiper-wrapper">
-						   <article class="popular__card swiper-slide">
-						   <a href="length-converter.html">
-							   <img src="measuring-tape.png" alt="length" class="popular__img">
-						   </a>
-						   <div class="popular__data">
-							   <h2></h2>
-							   <h3 class="popular__title">
-								 Length Converter  
-							   </h3>
-							   <p class="popular__description">
-								   Convert Length Units
-							   </p>
-						   </div>
-						   </article>
-						   
-						   
-						   
-						   <article class="popular__card swiper-slide">
-						   <a href="mass-converter.html">
-							   <img src="weighing-machine.png" alt="mass" class="popular__img">
-						   </a>
-						   <div class="popular__data">
-							   <h2></h2>
-							   <h3 class="popular__title">
-								   Mass Converter
-							   </h3>
-							   <p class="popular__description">
-								   Convert Mass Units
-							   </p>
-						   </div>
-						   </article>
-						   
-						   
-						   
-							   <article class="popular__card swiper-slide">
-						   <a href="volume-converter.html">
-							   <img src="measure.png" alt="volume" class="popular__img">
-						   </a>
-						   <div class="popular__data">
-							   <h2></h2>
-							   <h3 class="popular__title">
-								   Volume Converter
-							   </h3>
-							   <p class="popular__description">
-								   Convert Volume Units
-							   </p>
-						   </div>
-						   </article>
-					   
-				   
-						   
-						   <article class="popular__card swiper-slide">
-						  <a href="area-converter.html"> 
-							  <img src="area-graph.png" alt="area" class="popular__img">
-						   </a>
-						   <div class="popular__data">
-							   <h2></h2>
-							   <h3 class="popular__title">
-								   Area Converter
-							   </h3>
-							   <p class="popular__description">
-								   Convert Area Units
-							   </p>
-						   </div>
-						   </article>
-						   
-						   
-						   
-						   <article class="popular__card swiper-slide">
-						   <a href="temperature-converter.html">
-							   <img src="high-temperature.png" alt="temperature" class="popular__img">
-						   </a>
-						   <div class="popular__data">
-							   <h2></h2>
-							   <h3 class="popular__title">
-								   Temperature Converter
-							   </h3>
-							   <p class="popular__description">
-								   Convert Temperature Units
-							   </p>
-						   </div>
-						   </article>
-						   
-						   
-						   
-						   <article class="popular__card swiper-slide">
-						   <a href="time-converter.html">
-							   <img src="stopwatch.png" alt="time" class="popular__img">
-						   </a>
-						   <div class="popular__data">
-							   <h2></h2>
-							   <h3 class="popular__title">
-								   Time Converter
-							   </h3>
-							   <p class="popular__description">
-								   Convert Time Units
-							   </p>
-						   </div>
-						   </article>
-						   
-						   
-						   
-					   </div>
-					   <div class="swiper-button-next" id="swiper-button-next">
-						   <i class="bx bxs-chevron-right"></i>
-					   </div>
-					   
-					   <div class="swiper-button-prev" id="swiper-button-prev">
-						   <i class="bx bxs-chevron-left"></i>
-					   </div>
-				   </div>
-				</div>
-				
-				<div class="value__container container grid">
-					<div class="value__images">
-						<div class="value__orbe"></div>
-						<div class="value__img">
-							<img src="dan-cristian-padure-zm1oNbYS7DY-unsplash.jpg" alt="value">
-							
-						</div>
-					</div>
-					<div class="value__content">
-						<div class="value__data">
-							<span class="section__subtitle">Popular Conversions</span>
-							<h2 class="section__title">The Most Searched Conversions<span>.</span>
-							</h2>
-							<p class="value__description">
-								We are always read to help you to convert any unit
-							</p>
-						</div>
-						<div class="value__accordion">
-						<div class="value__accordion-item">
-							<header class="value__accordion-header">
-								<i class="bx bx-bar-chart-square"></i>
-								<h3 class="value__accordion-title">
-									Length Units
-								</h3>
-								<div class="value__accordion-arrow">
-								<i class="bx bxs-down-arrow"></i>
-								</div>
-							</header>
-							<div class="value__accordion-content">
-								<p class="value__accordion-description">
-		<li><a href="cm-to-in.html">cm to inches</a></li>
-		<li><a href="mm-to-in.html">mm to inches</a></li>
-		<li><a href="m-to-ft.html">meters to feet</a></li>
-		<li><a href="km-to-mi.html">km to miles</a></li>
-		<li><a href="cm-to-ft.html">cm to feet</a></li>
-		<li><a href="in-to-ft.html">inches to feet</a></li>
-		<li><a href="m-to-yd.html">meters to yards</a></li>
-								</p>
-							</div>
-							</div>
-						</div>
-						
-						<div class="value__accordion">
-						<div class="value__accordion-item">
-							<header class="value__accordion-header">
-								<i class="bx bx-bar-chart-square"></i>
-								<h3 class="value__accordion-title">
-									Mass Units
-								</h3>
-								<div class="value__accordion-arrow">
-								<i class="bx bxs-down-arrow"></i>
-								</div>
-							</header>
-							<div class="value__accordion-content">
-								<p class="value__accordion-description">
-		<li><a href="kg-to-lbs.html">kg to lbs</a></li>
-		<li><a href="g-to-oz.html">grams to ounces</a></li>
-		<li><a href="lbs-to-oz.html">pounds to ounces</a></li>
-								</p>
-							</div>
-							</div>
-						</div>
-						
-						<div class="value__accordion">
-						<div class="value__accordion-item">
-							<header class="value__accordion-header">
-								<i class="bx bx-bar-chart-square"></i>
-								<h3 class="value__accordion-title">
-									Volume Units
-								</h3>
-								<div class="value__accordion-arrow">
-								<i class="bx bxs-down-arrow"></i>
-								</div>
-							</header>
-							<div class="value__accordion-content">
-								<p class="value__accordion-description">
-	<li><a href="l-to-gal.html">liters to gallons</a></li>
-								</p>
-							</div>
-							</div>
-						</div>
-						
-						<div class="value__accordion">
-						<div class="value__accordion-item">
-							<header class="value__accordion-header">
-								<i class="bx bx-bar-chart-square"></i>
-								<h3 class="value__accordion-title">
-									Area Units
-								</h3>
-								<div class="value__accordion-arrow">
-								<i class="bx bxs-down-arrow"></i>
-								</div>
-							</header>
-							<div class="value__accordion-content">
-								<p class="value__accordion-description">
-<li><a href="ac-to-ft2.html">acres to square feet</a></li>
-								</p>
-							</div>
-							</div>
-						</div>
-							<div class="value__accordion">
-						<div class="value__accordion-item">
-							<header class="value__accordion-header">
-								<i class="bx bx-bar-chart-square"></i>
-								<h3 class="value__accordion-title">
-									Time Units
-								</h3>
-								<div class="value__accordion-arrow">
-								<i class="bx bxs-down-arrow"></i>
-								</div>
-							</header>
-							<div class="value__accordion-content">
-								<p class="value__accordion-description">
-								</p>
-							</div>
-							</div>
-						</div> 
-						
-	<div class="value__accordion">
-						<div class="value__accordion-item">
-							<header class="value__accordion-header">
-								<i class="bx bx-bar-chart-square"></i>
-								<h3 class="value__accordion-title">
-									Temperature Units
-								</h3>
-								<div class="value__accordion-arrow">
-								<i class="bx bxs-down-arrow"></i>
-								</div>
-							</header>
-							<div class="value__accordion-content">
-								<p class="value__accordion-description">
-<li><a href="c-to-f.html">celsius to fahrenheit</a></li>
-								</p>
-							</div>
-							</div>
-						</div>
-				<div class="value__accordion">
-						<div class="value__accordion-item">
-							<header class="value__accordion-header">
-								<i class="bx bx-bar-chart-square"></i>
-								<h3 class="value__accordion-title">
-									Acceleration Units
-								</h3>
-								<div class="value__accordion-arrow">
-								<i class="bx bxs-down-arrow"></i>
-								</div>
-							</header>
-							<div class="value__accordion-content">
-								<p class="value__accordion-description">
-<li><a href="mph-to-kph.html">mph to kph</a></li>
-								</p>
-							</div>
-							</div>
-						</div>
-						
-					<div class="value__accordion">
-						<div class="value__accordion-item">
-							<header class="value__accordion-header">
-								<i class="bx bx-bar-chart-square"></i>
-								<h3 class="value__accordion-title">
-									Other Tools
-								</h3>
-								<div class="value__accordion-arrow">
-								<i class="bx bxs-down-arrow"></i>
-								</div>
-							</header>
-							<div class="value__accordion-content">
-								<p class="value__accordion-description">
-<li><a href="calculate-bmi.html">BMI Calculator</a></li>
-								</p>
-							</div>
-							</div>
-						</div>
-					</div>
-				</div>
-            </section>
-
-            <!--==================== VALUE ====================-->
-            <section class="value section" id="value">
-				<div class="value__container container grid">
-					<div class="value__images">
-						<div class="value__orbe"></div>
-						<div class="value__img">
-							<img src="vishwarajsinh-rana-_1fByLYHA_0-unsplash.jpg" alt="value">
-							
-						</div>
-					</div>
-					<div class="value__content">
-						<div class="value__data">
-							<span class="section__subtitle">Our Value</span>
-							<h2 class="section__title">Value We Give To You<span>.</span>
-							</h2>
-							<p class="value__description">
-								We are always read to help you to convert any unit
-							</p>
-						</div>
-						<div class="value__accordion">
-						<div class="value__accordion-item">
-							<header class="value__accordion-header">
-								<i class="bx bxs-x-square"></i>
-								<h3 class="value__accordion-title">
-									Not quantity, but quality
-								</h3>
-								<div class="value__accordion-arrow">
-								<i class="bx bxs-down-arrow"></i>
-								</div>
-							</header>
-							<div class="value__accordion-content">
-								<p class="value__accordion-description">
-									At UnitCalculators, we believe that when it comes to unit conversion, it's not just about quantity, but about quality as well. That's why our unit conversion site stands out from the rest. Our user-friendly interface and accurate calculations ensure that you get the precise conversions you need, every time. Plus, we offer a wide range of conversion categories, including length, weight, temperature, and more. Whether you're a student, professional, or just someone who needs to convert units on a daily basis, UnitCalculators is your go-to source for reliable and efficient conversions. So why settle for less when you can have quality? Try UnitCalculators today and experience the difference for yourself.
-								</p>
-							</div>
-							</div>
-						</div>
-						
-						<div class="value__accordion">
-						<div class="value__accordion-item">
-							<header class="value__accordion-header">
-								<i class="bx bxs-shield-x"></i>
-								<h3 class="value__accordion-title">
-									Prevent any miscalculation
-								</h3>
-								<div class="value__accordion-arrow">
-								<i class="bx bxs-down-arrow"></i>
-								</div>
-							</header>
-							<div class="value__accordion-content">
-								<p class="value__accordion-description">
-									At UnitCalculators, we understand the importance of accuracy when it comes to unit conversions. That's why we've designed our site to prevent any miscalculations. With our advanced algorithms and comprehensive database, you can trust that our conversions are reliable and precise. We also offer real-time results, so you can quickly and easily double-check your calculations. Additionally, our site is regularly updated to ensure that our conversions are up-to-date and accurate. Don't take chances with miscalculations - trust UnitCalculators for all your unit conversion needs.
-								</p>
-							</div>
-							</div>
-						</div>
-						
-						<div class="value__accordion">
-						<div class="value__accordion-item">
-							<header class="value__accordion-header">
-								<i class="bx bx-bar-chart-square"></i>
-								<h3 class="value__accordion-title">
-									Best calculators to convert units
-								</h3>
-								<div class="value__accordion-arrow">
-								<i class="bx bxs-down-arrow"></i>
-								</div>
-							</header>
-							<div class="value__accordion-content">
-								<p class="value__accordion-description">
-									UnitCalculators offers some of the best calculators to convert units. Our calculators are user-friendly and offer accurate results in real-time. Our site features a wide range of calculators that cover different categories such as length, weight, temperature, volume, and more. With our easy-to-use interface, you can quickly convert between different units without the hassle of manually calculating the conversion. Whether you're a student, professional, or just someone who needs to convert units regularly, our calculators are designed to meet your needs. Trust UnitCalculators for the best calculators to convert units and experience the ease and accuracy of our site today.
-								</p>
-							</div>
-							</div>
-						</div>
-						
-						<div class="value__accordion">
-						<div class="value__accordion-item">
-							<header class="value__accordion-header">
-								<i class="bx bxs-check-square"></i>
-								<h3 class="value__accordion-title">
-									Calculate with ease
-								</h3>
-								<div class="value__accordion-arrow">
-								<i class="bx bxs-down-arrow"></i>
-								</div>
-							</header>
-							<div class="value__accordion-content">
-								<p class="value__accordion-description">
-									At UnitCalculators, we believe that calculating should be easy and stress-free. That's why we've designed our site to make calculating with ease. Our user-friendly interface and intuitive design make it simple to convert between different units, no matter what category you're working in. We offer a wide range of conversion calculators, including length, weight, temperature, and more, all of which provide accurate results in real-time. With UnitCalculators, you can say goodbye to the frustration of manual calculations and let our site do the work for you. Whether you're a student, professional, or just someone who needs to calculate units regularly, our site is designed to make your life easier. Calculate with ease today on UnitCalculators.
-								</p>
-							</div>
-							</div>
-						</div>
-							 
-					</div>
-				</div>
-
-            </section>
-
-            <!--==================== CONTACT ====================-->
-            <section class="contact section" id="contact">
-      <div class="container2">
-    <div class="content2">
-      <div class="left-side">
-        <div class="email details">
-          <i class="fas fa-envelope"></i>
-          <div class="topic">Email</div>
-          <div class="text-one">unitcalculators0gmail.com</div>
-          <div class="text-two">unitcalculators0gmail.com</div>
-        </div>
       </div>
-      <div class="right-side2">
-        <div class="topic-text">Send us a message</div>
-        <p>If you have any question or correction, send us a message.</p>
-      <form action="#">
-        <div class="input-box">
-          <input type="text" placeholder="Enter your name">
-        </div>
-        <div class="input-box">
-          <input type="text" placeholder="Enter your email">
-        </div>
-        <div class="input-box message-box">
-          
-        </div>
-        <div class="button2">
-			<a href="mailto:unitcalculators0.gmail.com"><input type="button" value="Send Now" ></a>
-        </div>
-      </form>
+
     </div>
-    </div>
-  </div>
-            </section>
-
-            <!--==================== SUBSCRIBE ====================-->
-            <section class="subscribe section">
-                <div class="subscribe_container">
-					<h1 class="subscribe__title">
-					Support Us on Patreon</h1>
-					<p class="subscribe__description">
-					Your support will be appreciated, 
-					and we will be making more tools for our users
-					</p>
-					<a href="https://patreon.com/UnitCalculators?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link" class="button subscribe__button">Support Us</a>
-				</div>
-            </section>
-        </main>
-
-        <!--==================== FOOTER ====================-->
-        <footer class="footer section">
-            <h3>©2023 | UnitCalculators</h3>
-			<a href="https://www.flaticon.com/free-icons/length" title="length icons">Length icons created by Freepik - Flaticon</a>
-			<a href="https://www.flaticon.com/free-icons/weighing-scale" title="weighing scale icons">Weighing scale icons created by Good Ware - Flaticon</a>
-			<a href="https://www.flaticon.com/free-icons/volume" title="volume icons">Volume icons created by Creaticca Creative Agency - Flaticon</a>
-			<a href="https://www.flaticon.com/free-icons/measure" title="measure icons">Measure icons created by Flat Icons - Flaticon</a>
-			<a href="https://www.flaticon.com/free-icons/temperature" title="temperature icons">Temperature icons created by Freepik - Flaticon</a>
-			<a href="https://www.flaticon.com/free-icons/time" title="time icons">Time icons created by Freepik - Flaticon</a>
-        </footer>
+  </footer>
 
 
-        <!--========== SCROLL UP ==========-->
 
 
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src=""></script>
 
-        <!--=============== SWIPER JS ===============-->
-        <script src="swiper-bundle.min.js"></script>
+  <!-- 
+    - #BACK TO TOP
+  -->
 
-        <!--=============== MAIN JS ===============-->
-        <script src="main.js"></script>
-    </body>
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
 </html>
-<!--=============== LENGTH CONVERTER JS ===============-->
-<script src="length_converter.js"></script>
-<!--=============== MASS CONVERTER JS ===============-->
-<script src="mass_converter.js"></script>
-<!--=============== VOLUME CONVERTER JS ===============-->
-<script src="volume_converter.js"></script>
-<!--=============== AREA CONVERTER JS ===============-->
-<script src="area_converter.js"></script>
-<!--=============== TEMPERATURE CONVERTER JS ===============-->
-<script src="temperature_converter.js"></script>
-<!--=============== TIME CONVERTER JS ===============-->
-<script src="time_converter.js"></script>
