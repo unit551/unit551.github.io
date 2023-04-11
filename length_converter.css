@@ -111,6 +111,33 @@ button {
 
 
 /*=============== REUSABLE CSS CLASSES ===============*/
+table {
+			border-collapse: collapse;
+			width: 100%;
+			margin-bottom: 1em;
+			border: 1px solid #ddd;
+		}
+		
+		th, td {
+			text-align: left;
+			padding: 8px;
+			border: 1px solid #ddd;
+		}
+		
+		th {
+			background-color: #f2f2f2;
+			color: #333;
+			font-weight: bold;
+		}
+		
+		tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+.text1{
+	color: #FFF;
+	background-color: #FFF;
+}
+
 .container {
   max-width: 1024px;
   margin-left: 1.5rem;
