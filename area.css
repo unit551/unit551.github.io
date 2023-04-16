@@ -701,6 +701,9 @@ button {
 		margin-left: 650px;
 		margin-top: -350px;
 	}
+	.chart1{
+		display: none;
+	}
 }
 
 .length_converter {
