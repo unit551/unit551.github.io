@@ -96,6 +96,8 @@ button {
   font-family: var(--body-font);
   outline: none;
   border: none;
+  border-radius: 10px;
+  height: 40px;
 }
 
 /*=============== THEME ===============*/
@@ -111,6 +113,7 @@ button {
 
 
 /*=============== REUSABLE CSS CLASSES ===============*/
+
 
 table {
 			border-collapse: collapse;
@@ -134,6 +137,9 @@ table {
 		tr:nth-child(even) {
 			background-color: #f2f2f2;
 		}
+.table1{
+	margin-top: 130px;
+}
 .text1{
 	color: #FFF;
 	background-color: #FFF;
@@ -698,6 +704,9 @@ table {
 		grid-template-columns: (2, 1fr);
 		margin-left: 650px;
 		margin-top: -500px;
+	}
+	.chart1{
+		display: none;
 	}
 }
 
