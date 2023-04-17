@@ -7,7 +7,7 @@
 				crossorigin= "anonymous"></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="Description" content="Convert energy units easily with our energy converter. With features like joule to calorie conversion, watt-hour to kilowatt-hour conversion, and more, our energy unit converter is perfect for anyone who needs to work with energy units.">
+		<meta name="Description" content="Our Energy Unit Converter tool is perfect for anyone who needs to quickly switch between joules, kilowatt-hours, BTUs, and more. With our energy converter, you can save time and ensure your energy calculations are accurate. Try our Energy Unit Converter!">
 
         <!--=============== FAVICON ===============-->
         <link rel="shortcut icon" href="Img/bx-calculator.png" type="image/x-icon">
@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="swiper-bundle.min.css">
 
         <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="length_converter2.css">
+        <link rel="stylesheet" href="energy.css">
 
         <title>Energy Converter - Convert Energy Units | UnitCalculators</title>
     </head>
@@ -73,10 +73,10 @@
                 <div class="home__container container grid">
 					<div class="home__data">
 						<h1 class="home__title">
-							Convert Energy Units <br> With <br> Energy Unit Converter
+							Convert <br> Energy Units With <br> Energy Units Converter
 						</h1>
 						<p class="home__discription">
-							Convert energy units
+							Energy conversion for any energy unit
 						</p>
 						
 						
@@ -86,13 +86,101 @@
 							<button class="button">Search</button>
 						</form>
 						
-	 <!-- PRESSURE CONVERTER START -->
-<!-- PRESSURE CONVERTER START -->
- 
-<!-- ENERGY CONVERTER END -->
-<!-- PRESSURE CONVERTER END -->
-		</div>
-			<h1 class="table1">Energy Units and Descriptions</h1>
+						<div class="home__value">
+							<div>
+								<h1 class="home__value-number">
+									 <span></span>
+								
+								</h1>
+								<span class="home__value-description">
+									 <br> 
+								
+								</span>
+							
+							</div>
+							<div>
+								<h1 class="home__value-number">
+									 <span></span>
+								
+								</h1>
+								<span class="home__value-description">
+									 <br> 
+								
+								</span>
+							
+							</div><div>
+								<h1 class="home__value-number">
+									 <span></span>
+								
+								</h1>
+								<span class="home__value-description">
+									 <br> 
+								
+								</span>
+							
+							</div>
+						
+						</div>
+
+  <form name="property_form" class="form5">
+    <span>
+      <select class="select-property" name="the_menu" size="1" onChange="UpdateUnitMenu(this, document.form_A.unit_menu); UpdateUnitMenu(this, document.form_B.unit_menu)">
+      </select>
+    </span>
+  </form>
+
+  
+						<div class="unit_container">
+	  <div class="length_converter">
+		<div class="title_container">
+            <h2>Energy Converter</h2>
+        </div>
+		  
+
+        <!-- second section: amount to be converted -->
+        <!-- third section: unit container -->
+        <div class="unit_container2">
+            <!-- left -->
+            <div class="left">
+                <p>From</p>
+                  <div class="select_container">
+    <form name="form_A" onSubmit="return false">
+      <input type="text" class="input4" name="unit_input" maxlength="20" value="0" onKeyUp="CalculateUnit(document.form_A, document.form_B)">
+      <span>
+        <select name="unit_menu" onChange="CalculateUnit(document.form_B, document.form_A)">
+        </select>
+      </span>
+    </form>
+  </div> <!-- /converter-side-a -->
+</div>
+	
+
+            <!-- middle -->
+            <div class="middle">
+                <i class="fas fa-cog fa-spin" style="font-size:24px"></i>
+            </div>
+
+            <!-- right -->
+            <div class="right">
+                <p>To</p>
+                    <div class="select_container to">
+    <form name="form_B" onSubmit="return false">
+      <input type="text" class="input4" name="unit_input" maxlength="20" value="0" onkeyup="CalculateUnit(document.form_B, document.form_A)">
+      <span>
+        <select name="unit_menu" onChange="CalculateUnit(document.form_A, document.form_B)">
+        </select>
+      </span>
+    </form>
+  </div> <!-- /converter-side-b -->
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+					</div></div>
+				<div class="table1">
+	<h1>Energy Unit Converter</h1>
 	<table>
 		<tr>
 			<th>Energy Unit</th>
@@ -100,86 +188,93 @@
 		</tr>
 		<tr>
 			<td>Joule (J)</td>
-			<td>The SI unit of energy, defined as the amount of work done when a force of one newton is applied over a distance of one meter.</td>
+			<td>A unit of energy defined as the work done when a force of one newton is applied over a distance of one meter.</td>
+		</tr>
+		<tr>
+			<td>BTU (mean)</td>
+			<td>A British thermal unit (BTU) is a unit of heat energy used in the United States, defined as the amount of heat required to raise the temperature of one pound of water by one degree Fahrenheit at a constant pressure of one atmosphere. The mean value of the BTU is approximately 1,055 joules.</td>
+		</tr>
+		<tr>
+			<td>BTU (thermo)</td>
+			<td>A unit of heat energy used in the United Kingdom, defined as the amount of heat required to raise the temperature of one pound of water by one degree Fahrenheit at a constant pressure of one atmosphere. The thermochemical BTU is approximately 1,054.8 joules.</td>
 		</tr>
 		<tr>
 			<td>Calorie (cal)</td>
-			<td>The amount of energy needed to raise the temperature of one gram of water by one degree Celsius at a pressure of one atmosphere.</td>
+			<td>A unit of energy defined as the amount of heat required to raise the temperature of one gram of water by one degree Celsius. One calorie is approximately 4.184 joules.</td>
 		</tr>
 		<tr>
-			<td>Kilocalorie (kcal)</td>
-			<td>Also known as a food calorie, this is the amount of energy needed to raise the temperature of one kilogram of water by one degree Celsius at a pressure of one atmosphere.</td>
+			<td>Calorie (mean)</td>
+			<td>A unit of energy used in nutrition, defined as the amount of heat required to raise the temperature of one kilogram of water by one degree Celsius. The mean calorie is approximately 4.190 joules.</td>
 		</tr>
 		<tr>
-			<td>British Thermal Unit (BTU)</td>
-			<td>The amount of heat needed to raise the temperature of one pound of water by one degree Fahrenheit at a constant pressure of one atmosphere.</td>
+			<td>Calorie (thermo)</td>
+			<td>A unit of energy used in physics, defined as the amount of heat required to raise the temperature of one gram of water by one degree Celsius. The thermochemical calorie is approximately 4.184 joules.</td>
 		</tr>
 		<tr>
-			<td>Kilowatt-hour (kWh)</td>
-			<td>A unit of energy equal to the amount of energy used by a 1,000-watt appliance for one hour. Often used to measure electricity consumption.</td>
-		</tr>
-		<tr>
-			<td>Electronvolt (eV)</td>
-			<td>The amount of energy gained or lost by an electron as it moves through an electric potential difference of one volt. Often used in particle physics.</td>
-		</tr>
-		<tr>
-			<td>Foot-Pound (ft·lb)</td>
-			<td>The amount of energy required to lift one pound a distance of one foot against gravity. Often used in mechanics and engineering.</td>
-		</tr>
-		<tr>
-			<td>Horsepower-Hour (hp·h)</td>
-			<td>A unit of energy commonly used to describe the output of engines or motors. One horsepower-hour is equal to 746 watt-hours.</td>
+			<td>Electron volt (eV)</td>
+			<td>A unit of energy commonly used in atomic and nuclear physics, defined as the energy gained by an electron when it is accelerated through a potential difference of one volt. One electron volt is approximately 1.602 x 10^-19 joules.</td>
 		</tr>
 		<tr>
 			<td>Erg (erg)</td>
-			<td>The amount of work done by a force of one dyne over a distance of one centimeter. Often used in physics and astronomy.</td>
+			<td>A unit of energy defined as the work done by a force of one dyne acting over a distance of one centimeter. One erg is approximately 10^-7 joules.</td>
 		</tr>
 		<tr>
-			<td>Ton of TNT Equivalent (TNT)</td>
-			<td>A unit of energy used to compare the explosive power of different weapons. One ton of TNT equivalent is equal to 4.184 gigajoules.</td>
+			<td>Foot-pound (ft-lb)</td>
+			<td>A unit of energy defined as the work done when a force of one pound is applied over a distance of one foot. One foot-pound is approximately 1.356 joules.</td>
 		</tr>
 		<tr>
-			<td>Therm (thm)</td>
-			<td>A unit of heat energy used to describe the consumption of natural gas or other fuels. One therm is equal to 100,000 BTUs.</td>
-		</tr>
-		<tr>
-			<td>Quad (quad)</td>
-			<td>A unit of energy used to describe large amounts of energy consumed or produced by entire countries or regions. One quad is equal to 10^15 BTUs.</td>
-		</tr>
-	</table>
-<h1 style="color: #FFF">Energy Units</h1>
-	<h2 style="color: #FFF">Joules</h2>
-	<p style="color: #FFF">Joules are the most fundamental unit of energy in the International System of Units (SI). One joule is equal to the amount of work done when a force of one newton is applied over a distance of one meter. Joules are commonly used to measure the energy consumed or produced by electrical devices, such as light bulbs, appliances, and power plants.</p>
-
-	<h2 style="color: #FFF">Calories and Kilocalories</h2>
-	<p style="color: #FFF">Calories and kilocalories are units of energy used to measure the heat energy absorbed or released by chemical reactions or physical processes, such as the metabolism of food in the human body. One calorie is defined as the amount of energy needed to raise the temperature of one gram of water by one degree Celsius, while one kilocalorie is equal to 1,000 calories. Calories and kilocalories are often used in nutrition and dietetics to measure the energy content of foods and beverages.</p>
-
-	<h2 style="color: #FFF">British Thermal Units (BTUs)</h2>
-	<p style="color: #FFF">BTUs are a unit of heat energy used primarily in the United States to measure the energy content of fuels such as natural gas, propane, and heating oil. One BTU is defined as the amount of heat required to raise the temperature of one pound of water by one degree Fahrenheit.</p>
-
-	<h2 style="color: #FFF">Kilowatt-hours</h2>
-	<p style="color: #FFF">Kilowatt-hours are another commonly used energy unit in the United States and other countries to measure electricity consumption. One kilowatt-hour is equal to the amount of energy used by a 1,000-watt appliance for one hour.</p>
-
-	<h2 style="color: #FFF">Electronvolts</h2>
-	<p style="color: #FFF">Electronvolts are a unit of energy commonly used in particle physics to measure the energy gained or lost by an electron as it moves through an electric potential difference of one volt.</p>
-
-	<h2 style="color: #FFF">Foot-pounds and Horsepower-hours</h2>
-	<p style="color: #FFF">Foot-pounds are a unit of energy used in mechanics and engineering to describe the work done by a force of one pound over a distance of one foot. Horsepower-hours are another unit of energy commonly used to describe the output of engines or motors.</p>
-
-	<h2 style="color: #FFF">Ergs and Tons of TNT Equivalent</h2>
-	<p style="color: #FFF">Ergs are a unit of energy used in physics and astronomy to describe small amounts of energy. Tons of TNT equivalent are a unit of energy used to compare the explosive power of different weapons.</p>
-
-	<h2 style="color: #FFF">Therms and Quads</h2>
-	<p style="color: #FFF">Therms are a unit of heat energy used in the United States to measure natural gas consumption. Quads are a unit of energy used to describe large amounts of energy consumed or produced by entire countries or regions.</p>
-
-	<h2 style="color: #FFF">Conclusion</h2>
-	<p style="color: #FFF">In conclusion, energy units are an essential part of physics, chemistry, engineering, and many other fields that deal with the storage, transfer, and consumption of energy. Understanding the properties and applications of different energy units can help us measure and manage energy more effectively, whether it's for powering our homes, fueling our cars, or exploring the mysteries of the universe.</p>
-
-
-					</div>
-				</div>
-
-					 
+			<td>Foot-poundal (ft-poundal)</td>
+<td>A unit of energy defined as the work done when a force of one poundal is applied over a distance of one foot. One foot-poundal is approximately 0.04214 joules.</td>
+</tr>
+<tr>
+<td>Horsepower-hour (hp-hr)</td>
+<td>A unit of energy defined as the energy consumed by a one horsepower load running for one hour. One horsepower-hour is approximately 2.685 x 10^6 joules.</td>
+</tr>
+<tr>
+<td>Kilocalorie (kcal)</td>
+<td>A unit of energy commonly used in nutrition, defined as the amount of heat required to raise the temperature of one kilogram of water by one degree Celsius. One kilocalorie is approximately 4,184 joules.</td>
+</tr>
+<tr>
+<td>Kilocalorie (mean)</td>
+<td>A unit of energy used in nutrition, defined as the amount of heat required to raise the temperature of one kilogram of water by one degree Celsius. The mean kilocalorie is approximately 4.190 x 10^3 joules.</td>
+</tr>
+<tr>
+<td>Kilowatt-hour (kW-hr)</td>
+<td>A unit of energy commonly used to measure electricity consumption, defined as the energy consumed by a one kilowatt load running for one hour. One kilowatt-hour is approximately 3.6 x 10^6 joules.</td>
+</tr>
+<tr>
+<td>Ton of TNT</td>
+<td>A unit of energy used to measure the energy released by explosions. One ton of TNT is approximately 4.184 x 10^9 joules.</td>
+</tr>
+<tr>
+<td>Volt-coulomb (V Cb)</td>
+<td>A unit of energy defined as the work done by a potential difference of one volt when one coulomb of charge is moved between two points. One volt-coulomb is approximately 1 joule.</td>
+</tr>
+<tr>
+<td>Watt-hour (W hr)</td>
+<td>A unit of energy commonly used to measure electricity consumption, defined as the energy consumed by a one watt load running for one hour. One watt-hour is approximately 3.6 x 10^3 joules.</td>
+</tr>
+<tr>
+<td>Watt-second (W sec)</td>
+<td>A unit of energy commonly used to measure power, defined as the energy consumed by a one watt load in one second. One watt-second is equivalent to one joule.</td>
+</tr>
+					</table></div>
+<h1 style="color: #FFF">Understanding Energy Units</h1>
+    <h2 style="color: #FFF">The Definition of Energy</h2>
+    <p style="color: #FFF">Energy units are an essential part of measuring and understanding the different forms of energy that we encounter in our daily lives. Energy is defined as the ability to do work, and it can take many forms, such as mechanical, thermal, electrical, and nuclear energy.</p>
+    <h2 style="color: #FFF">The Common Units of Energy</h2>
+    <p style="color: #FFF">There are many different units of energy used in various fields, and each unit has its own unique characteristics and uses. One of the most common units of energy is the joule (J), which is the standard unit of energy in the International System of Units (SI). This unit is used to measure energy in all forms, including kinetic energy, potential energy, and thermal energy.</p>
+    <p style="color: #FFF">Another common unit of energy is the British Thermal Unit (BTU), which is used to measure the amount of heat required to raise the temperature of one pound of water by one degree Fahrenheit. The BTU is commonly used in the United States to measure energy consumption for heating and cooling systems.</p>
+    <h2 style="color: #FFF">The Calorie</h2>
+    <p style="color: #FFF">The calorie is another unit of energy that is often used in nutrition and biochemistry. This unit is defined as the amount of energy required to raise the temperature of one gram of water by one degree Celsius. There are two types of calories - the mean calorie and the thermo calorie - which are used in different fields to measure different types of energy.</p>
+    <h2 style="color: #FFF">Other Units of Energy</h2>
+    <p style="color: #FFF">Other units of energy include the watt-hour (Wh), the kilowatt-hour (kWh), and the electron volt (eV). The watt-hour is used to measure the amount of energy used by an electrical device over a period of one hour, while the kilowatt-hour is used to measure larger amounts of electrical energy.</p>
+    <p style="color: #FFF">The electron volt is a unit of energy commonly used in physics to measure the energy of subatomic particles. It is defined as the energy gained by an electron when it moves through an electric potential difference of one volt.</p>
+	<h3 style="color: #FFF">Converting between Energy Units</h3>
+<p style="color: #FFF">Converting between different energy units is an essential part of understanding and using energy measurements. Conversion factors can be found using conversion tables or formulas, or they can be calculated using dimensional analysis. For example, one BTU is equivalent to approximately 1,055 joules, and one calorie is equivalent to approximately 4.184 joules.</p>
+<p style="color: #FFF">It is important to use the appropriate energy unit for the situation at hand. When calculating the energy usage of a household appliance, for example, it may be more appropriate to use the kilowatt-hour (kWh) as the unit of measurement, rather than the joule. Understanding the appropriate unit of energy and its conversion to other units can help us better manage our energy usage and make informed decisions about energy consumption.</p>
+<h3 style="color: #FFF">Conclusion</h3>
+<p style="color: #FFF">In conclusion, energy units play a crucial role in measuring and understanding the different forms of energy that we encounter in our daily lives. By using the appropriate unit of energy and understanding its conversion to other units, we can better understand and manage our energy usage, and make informed decisions about energy consumption.</p>
             </section>
           
             <!--==================== POPULAR ====================-->
@@ -253,7 +348,6 @@
 							   </h3>
 							   <p class="popular__description">
 								   Convert Area Units
-
 							   </p>
 						   </div>
 						   </article>
@@ -639,7 +733,6 @@
 			<a href="https://www.flaticon.com/free-icons/measure" title="measure icons">Measure icons created by Flat Icons - Flaticon</a>
 			<a href="https://www.flaticon.com/free-icons/temperature" title="temperature icons">Temperature icons created by Freepik - Flaticon</a>
 			<a href="https://www.flaticon.com/free-icons/time" title="time icons">Time icons created by Freepik - Flaticon</a>
-			<a href="http://www.unitconversion.org/" title="unitconversion">Calculator created by unitconversion.org - Flaticon</a>
         </footer>
 
 
@@ -656,3 +749,5 @@
         <script src="main.js"></script>
     </body>
 </html>
+<!--=============== LENGTH CONVERTER JS ===============-->
+         <script src="energy.js"></script>
