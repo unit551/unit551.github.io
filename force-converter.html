@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+	    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9648717009689247"
+     crossorigin="anonymous"></script>
+		<script src="https://kit.fontawesome.com/3e6491bf19.js"
+				crossorigin= "anonymous"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="Description" content="The force converter. Convert between different units of force with our force converter tool. Easily convert Newtons, pounds-force, dynes, and more. Our online Force Converter is fast, accurate, and free. Try it now to simplify your calculations">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="Img/bx-calculator.png" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="energy.css">
+
+        <title>Force Converter - Convert Force Units | UnitCalculators</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+			<nav class="nav container">
+				<a href="home.html" class="nav__logo">
+					UnitCalculators <i class="bx bxs-calculator"></i> 
+				</a>
+				
+				<div class="nav__menu">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="#home" class="nav__link active-link">
+								<i class="bx bx-home-alt-2" ></i>
+								<span>Home</span>
+							</a>
+						</li>
+						
+						<li class="nav__item">
+							<a href="#popular" class="nav__link">
+								<i class="bx bx-calculator"></i>
+								<span>Converters</span>
+							</a>
+						</li>
+						
+						<li class="nav__item">
+							<a href="#value" class="nav__link">
+								<i class="bx bx-award"></i>
+								<span>Theory</span>
+							</a>
+						</li>
+						
+						<li class="nav__item">
+							<a href="#contact" class="nav__link">
+								<i class="bx bx-phone"></i>
+								<span>Contact</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+					<div class="home__data">
+						<h1 class="home__title">
+							Convert <br> Force Units With <br> Force Units Converter
+						</h1>
+						<p class="home__discription">
+							Force conversion for any force unit
+						</p>
+						
+						
+						<form action="" class="home__search">
+							<i class="bx bx-map"></i>
+							<input type="search" placeholder="Search by Topic..." class="home__search_input">
+							<button class="button">Search</button>
+						</form>
+						
+						<div class="home__value">
+							<div>
+								<h1 class="home__value-number">
+									 <span></span>
+								
+								</h1>
+								<span class="home__value-description">
+									 <br> 
+								
+								</span>
+							
+							</div>
+							<div>
+								<h1 class="home__value-number">
+									 <span></span>
+								
+								</h1>
+								<span class="home__value-description">
+									 <br> 
+								
+								</span>
+							
+							</div><div>
+								<h1 class="home__value-number">
+									 <span></span>
+								
+								</h1>
+								<span class="home__value-description">
+									 <br> 
+								
+								</span>
+							
+							</div>
+						
+						</div>
+
+  <form name="property_form" class="form5">
+    <span>
+      <select class="select-property" name="the_menu" size="1" onChange="UpdateUnitMenu(this, document.form_A.unit_menu); UpdateUnitMenu(this, document.form_B.unit_menu)">
+      </select>
+    </span>
+  </form>
+
+  
+						<div class="unit_container">
+	  <div class="length_converter">
+		<div class="title_container">
+            <h2>Force Converter</h2>
+        </div>
+		  
+
+        <!-- second section: amount to be converted -->
+        <!-- third section: unit container -->
+        <div class="unit_container2">
+            <!-- left -->
+            <div class="left">
+                <p>From</p>
+                  <div class="select_container">
+    <form name="form_A" onSubmit="return false">
+      <input type="text" class="input4" name="unit_input" maxlength="20" value="0" onKeyUp="CalculateUnit(document.form_A, document.form_B)">
+      <span>
+        <select name="unit_menu" onChange="CalculateUnit(document.form_B, document.form_A)">
+        </select>
+      </span>
+    </form>
+  </div> <!-- /converter-side-a -->
+</div>
+	
+
+            <!-- middle -->
+            <div class="middle">
+                <i class="fas fa-cog fa-spin" style="font-size:24px"></i>
+            </div>
+
+            <!-- right -->
+            <div class="right">
+                <p>To</p>
+                    <div class="select_container to">
+    <form name="form_B" onSubmit="return false">
+      <input type="text" class="input4" name="unit_input" maxlength="20" value="0" onkeyup="CalculateUnit(document.form_B, document.form_A)">
+      <span>
+        <select name="unit_menu" onChange="CalculateUnit(document.form_A, document.form_B)">
+        </select>
+      </span>
+    </form>
+  </div> <!-- /converter-side-b -->
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+					</div></div>
+				<div class="table1">
+	<h1>Force Unit Converter</h1>
+	<table>
+		<tr>
+			<th>Force Unit</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>Newton (N)</td>
+			<td>The force required to accelerate a mass of one kilogram at a rate of one meter per second squared.</td>
+		</tr>
+		<tr>
+			<td>Dyne (dy)</td>
+			<td>The force required to accelerate a mass of one gram at a rate of one centimeter per second squared.</td>
+		</tr>
+		<tr>
+			<td>Kilogram force (kgf)</td>
+			<td>The force required to accelerate a mass of one kilogram at a rate of one meter per second squared due to gravity.</td>
+		</tr>
+		<tr>
+			<td>Kilopond force (kpf)</td>
+			<td>An alternative name for the kilogram force (kgf).</td>
+		</tr>
+		<tr>
+			<td>Kip (k)</td>
+			<td>A unit of force equal to 1000 pounds-force (lbf).</td>
+		</tr>
+		<tr>
+			<td>Ounce force (ozf)</td>
+			<td>The force required to accelerate a mass of one avoirdupois ounce at a rate of one foot per second squared.</td>
+		</tr>
+		<tr>
+			<td>Pound force (lbf)</td>
+			<td>The force required to accelerate a mass of one pound at a rate of one foot per second squared.</td>
+		</tr>
+			<tr>
+			<td>Poundal (pdl)</td>
+			<td>The force required to accelerate a mass of one pound at a rate of one foot per second squared.</td>
+		</tr>
+	</table>
+				</div>
+<h1 style="color: #FFF">Understanding Force Units</h1>
+    <h2 style="color: #FFF">The Importance of Force Units</h2>
+    <p style="color: #FFF">Force is a fundamental concept in physics and engineering that describes the interactions between objects. In order to accurately measure and quantify force, a number of different units have been established.</p>
+    <h1 style="color: #FFF">Newton (N)</h1>
+    <p style="color: #FFF">The Newton (N) is a unit of force named after Sir Isaac Newton, a renowned physicist and mathematician. It is defined as the force required to accelerate a mass of one kilogram at a rate of one meter per second squared. The Newton is the standard unit of force in the International System of Units (SI) and is commonly used in fields such as physics, engineering, and mechanics.</p>
+    <h1 style="color: #FFF">Dyne (dy)</h1>
+<p style="color: #FFF">The Dyne (dy) is a unit of force that is used primarily in physics and engineering. It is defined as the force required to accelerate a mass of one gram at a rate of one centimeter per second squared. While the Dyne is not commonly used in everyday life, it is an important unit for making precise calculations in scientific research.</p>
+
+<h1 style="color: #FFF">Kilogram force (kgf)</h1>
+<p style="color: #FFF">The Kilogram force (kgf) is a unit of force that is defined as the force required to accelerate a mass of one kilogram at a rate of one meter per second squared due to gravity. The Kilogram force is commonly used in engineering and mechanics, particularly in industries such as aviation and automotive manufacturing. In some countries, the Kilogram force is also known as the Kilopond force (kpf).</p>
+
+<h1 style="color: #FFF">Kilopond force (kpf)</h1>
+<p style="color: #FFF">The Kilopond force (kpf) is an alternative name for the Kilogram force (kgf), which is the force required to accelerate a mass of one kilogram at a rate of one meter per second squared due to gravity. The Kilopond force is not commonly used today, as the Kilogram force is the standard unit of force in the International System of Units (SI).</p>
+
+<h1 style="color: #FFF">Kip (k)</h1>
+<p style="color: #FFF">The Kip (k) is a unit of force commonly used in the United States, particularly in industries such as construction and engineering. It is defined as 1000 pounds-force (lbf), which means that one Kip is equivalent to 1000 pounds of force. The Kip is particularly useful for measuring large forces, such as those involved in the construction of buildings, bridges, and other structures.</p>
+
+<h1 style="color: #FFF">Ounce force (ozf)</h1>
+<p style="color: #FFF">The Ounce force (ozf) is a unit of force that is used primarily in the United States. It is defined as the force required to accelerate a mass of one avoirdupois ounce at a rate of one foot per second squared. While the Ounce force is not commonly used in scientific research or engineering, it is an important unit for making precise measurements in industries such as textile manufacturing.</p>
+
+<h1 style="color: #FFF">Pound force (lbf)</h1>
+<p style="color: #FFF">The Pound force (lbf) is a unit of force that is commonly used in the United States and other countries that use the English system of units. It is defined as the force required to accelerate a mass of one pound at a rate of one foot per second squared. The Pound force is used in a wide range of applications, including aviation, automotive manufacturing, and construction.</p>
+
+<h1 style="color: #FFF">Poundal (pdl)</h1>
+<p style="color: #FFF">The Poundal (pdl) is a unit of force that is used primarily in physics and engineering. It is defined as the force required to accelerate a mass of one pound at a rate of one foot per second squared. While the Poundal is not commonly used in everyday life, it is an important unit for making precise calculations in scientific research.</p>
+
+    <h2 style="color: #FFF">Other Common Force Units</h2>
+    <p style="color: #FFF">Other common force units include the Dyne (dy), the Kilogram force (kgf), the Kilopond force (kpf), the Kip (k), the Ounce force (ozf), the Pound force (lbf), and the Poundal (pdl).</p>
+    <h2 style="color: #FFF">The Role of Force Units in Various Fields</h2>
+    <p style="color: #FFF">Understanding force units is important in a wide range of fields, including physics, engineering, and mechanics. In order to make accurate calculations and measurements, it's essential to use the correct units and to be able to convert between different systems of units as needed. Whether you're working on a scientific experiment, building a bridge, or designing a new piece of machinery, understanding force units is an essential part of the process.</p>
+  
+            </section>
+          
+            <!--==================== POPULAR ====================-->
+            <section class="popular section" id="popular">
+               <div class="container3">
+				   <span class="section__subtitle">Best choice</span>
+				   <h2 class="section__title">
+				   Popular Converters<span>.</span></h2>
+				   
+				   <div class="popular__container swiper">
+					   <div class="swiper-wrapper">
+						   <article class="popular__card swiper-slide">
+						   <a href="length-converter.html">
+							   <img src="measuring-tape.png" alt="length" class="popular__img">
+						   </a>
+						   <div class="popular__data">
+							   <h2></h2>
+							   <h3 class="popular__title">
+								 Length Converter  
+							   </h3>
+							   <p class="popular__description">
+								   Convert Length Units
+							   </p>
+						   </div>
+						   </article>
+						   
+						   
+						   
+						   <article class="popular__card swiper-slide">
+						   <a href="mass-converter.html">
+							   <img src="weighing-machine.png" alt="mass" class="popular__img">
+						   </a>
+						   <div class="popular__data">
+							   <h2></h2>
+							   <h3 class="popular__title">
+								   Mass Converter
+							   </h3>
+							   <p class="popular__description">
+								   Convert Mass Units
+							   </p>
+						   </div>
+						   </article>
+						   
+						   
+						   
+							   <article class="popular__card swiper-slide">
+						   <a href="volume-converter.html">
+							   <img src="measure.png" alt="volume" class="popular__img">
+						   </a>
+						   <div class="popular__data">
+							   <h2></h2>
+							   <h3 class="popular__title">
+								   Volume Converter
+							   </h3>
+							   <p class="popular__description">
+								   Convert Volume Units
+							   </p>
+						   </div>
+						   </article>
+					   
+				   
+						   
+						   <article class="popular__card swiper-slide">
+						  <a href="area-converter.html"> 
+							  <img src="area-graph.png" alt="area" class="popular__img">
+						   </a>
+						   <div class="popular__data">
+							   <h2></h2>
+							   <h3 class="popular__title">
+								   Area Converter
+							   </h3>
+							   <p class="popular__description">
+								   Convert Area Units
+							   </p>
+						   </div>
+						   </article>
+						   
+						   
+						   
+						   <article class="popular__card swiper-slide">
+						   <a href="temperature-converter.html">
+							   <img src="high-temperature.png" alt="temperature" class="popular__img">
+						   </a>
+						   <div class="popular__data">
+							   <h2></h2>
+							   <h3 class="popular__title">
+								   Temperature Converter
+							   </h3>
+							   <p class="popular__description">
+								   Convert Temperature Units
+							   </p>
+						   </div>
+						   </article>
+						   
+						   
+						   
+						   <article class="popular__card swiper-slide">
+						   <a href="time-converter.html">
+							   <img src="stopwatch.png" alt="time" class="popular__img">
+						   </a>
+						   <div class="popular__data">
+							   <h2></h2>
+							   <h3 class="popular__title">
+								   Time Converter
+							   </h3>
+							   <p class="popular__description">
+								   Convert Time Units
+							   </p>
+						   </div>
+						   </article>
+						   
+						   
+						   
+					   </div>
+					   <div class="swiper-button-next" id="swiper-button-next">
+						   <i class="bx bxs-chevron-right"></i>
+					   </div>
+					   
+					   <div class="swiper-button-prev" id="swiper-button-prev">
+						   <i class="bx bxs-chevron-left"></i>
+					   </div>
+				   </div>
+				</div>
+				
+				<div class="value__container container grid">
+					<div class="value__images">
+						<div class="value__orbe"></div>
+						<div class="value__img">
+							<img src="dan-cristian-padure-zm1oNbYS7DY-unsplash.jpg" alt="value">
+							
+						</div>
+					</div>
+					<div class="value__content">
+						<div class="value__data">
+							<span class="section__subtitle">Popular Conversions</span>
+							<h2 class="section__title">The Most Searched Conversions<span>.</span>
+							</h2>
+							<p class="value__description">
+								We are always ready to help you to convert any unit
+							</p>
+						</div>
+						<div class="value__accordion">
+						<div class="value__accordion-item">
+							<header class="value__accordion-header">
+								<i class="bx bx-bar-chart-square"></i>
+								<h3 class="value__accordion-title">
+									Length Units
+								</h3>
+								<div class="value__accordion-arrow">
+								<i class="bx bxs-down-arrow"></i>
+								</div>
+							</header>
+							<div class="value__accordion-content">
+								<p class="value__accordion-description">
+		<li><a href="cm-to-in.html">cm to inches</a></li>
+		<li><a href="mm-to-in.html">mm to inches</a></li>
+		<li><a href="m-to-ft.html">meters to feet</a></li>
+		<li><a href="km-to-mi.html">km to miles</a></li>
+		<li><a href="cm-to-ft.html">cm to feet</a></li>
+		<li><a href="in-to-ft.html">inches to feet</a></li>
+		<li><a href="m-to-yd.html">meters to yards</a></li>
+								</p>
+							</div>
+							</div>
+						</div>
+						
+						<div class="value__accordion">
+						<div class="value__accordion-item">
+							<header class="value__accordion-header">
+								<i class="bx bx-bar-chart-square"></i>
+								<h3 class="value__accordion-title">
+									Mass Units
+								</h3>
+								<div class="value__accordion-arrow">
+								<i class="bx bxs-down-arrow"></i>
+								</div>
+							</header>
+							<div class="value__accordion-content">
+								<p class="value__accordion-description">
+		<li><a href="kg-to-lbs.html">kg to lbs</a></li>
+		<li><a href="g-to-oz.html">grams to ounces</a></li>
+		<li><a href="lbs-to-oz.html">pounds to ounces</a></li>
+								</p>
+							</div>
+							</div>
+						</div>
+						
+						<div class="value__accordion">
+						<div class="value__accordion-item">
+							<header class="value__accordion-header">
+								<i class="bx bx-bar-chart-square"></i>
+								<h3 class="value__accordion-title">
+									Volume Units
+								</h3>
+								<div class="value__accordion-arrow">
+								<i class="bx bxs-down-arrow"></i>
+								</div>
+							</header>
+							<div class="value__accordion-content">
+								<p class="value__accordion-description">
+	<li><a href="l-to-gal.html">liters to gallons</a></li>
+								</p>
+							</div>
+							</div>
+						</div>
+						
+						<div class="value__accordion">
+						<div class="value__accordion-item">
+							<header class="value__accordion-header">
+								<i class="bx bx-bar-chart-square"></i>
+								<h3 class="value__accordion-title">
+									Area Units
+								</h3>
+								<div class="value__accordion-arrow">
+								<i class="bx bxs-down-arrow"></i>
+								</div>
+							</header>
+							<div class="value__accordion-content">
+								<p class="value__accordion-description">
+<li><a href="ac-to-ft2.html">acres to square feet</a></li>
+								</p>
+							</div>
+							</div>
+						</div>
+							<div class="value__accordion">
+						<div class="value__accordion-item">
+							<header class="value__accordion-header">
+								<i class="bx bx-bar-chart-square"></i>
+								<h3 class="value__accordion-title">
+									Time Units
+								</h3>
+								<div class="value__accordion-arrow">
+								<i class="bx bxs-down-arrow"></i>
+								</div>
+							</header>
+							<div class="value__accordion-content">
+								<p class="value__accordion-description">
+								</p>
+							</div>
+							</div>
+						</div> 
+						
+	<div class="value__accordion">
+						<div class="value__accordion-item">
+							<header class="value__accordion-header">
+								<i class="bx bx-bar-chart-square"></i>
+								<h3 class="value__accordion-title">
+									Temperature Units
+								</h3>
+								<div class="value__accordion-arrow">
+								<i class="bx bxs-down-arrow"></i>
+								</div>
+							</header>
+							<div class="value__accordion-content">
+								<p class="value__accordion-description">
+<li><a href="c-to-f.html">celsius to fahrenheit</a></li>
+								</p>
+							</div>
+							</div>
+						</div>
+				<div class="value__accordion">
+						<div class="value__accordion-item">
+							<header class="value__accordion-header">
+								<i class="bx bx-bar-chart-square"></i>
+								<h3 class="value__accordion-title">
+									Acceleration Units
+								</h3>
+								<div class="value__accordion-arrow">
+								<i class="bx bxs-down-arrow"></i>
+								</div>
+							</header>
+							<div class="value__accordion-content">
+								<p class="value__accordion-description">
+<li><a href="mph-to-kph.html">mph to kph</a></li>
+								</p>
+							</div>
+							</div>
+						</div>
+						
+					<div class="value__accordion">
+						<div class="value__accordion-item">
+							<header class="value__accordion-header">
+								<i class="bx bx-bar-chart-square"></i>
+								<h3 class="value__accordion-title">
+									Other Tools
+								</h3>
+								<div class="value__accordion-arrow">
+								<i class="bx bxs-down-arrow"></i>
+								</div>
+							</header>
+							<div class="value__accordion-content">
+								<p class="value__accordion-description">
+<li><a href="calculate-bmi.html">BMI Calculator</a></li>
+								</p>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </section>
+
+            <!--==================== VALUE ====================-->
+            <section class="value section" id="value">
+				<div class="value__container container grid">
+					<div class="value__images">
+						<div class="value__orbe"></div>
+						<div class="value__img">
+							<img src="vishwarajsinh-rana-_1fByLYHA_0-unsplash.jpg" alt="value">
+							
+						</div>
+					</div>
+					<div class="value__content">
+						<div class="value__data">
+							<span class="section__subtitle">Our Value</span>
+							<h2 class="section__title">Value We Give To You<span>.</span>
+							</h2>
+							<p class="value__description">
+								We are always read to help you to convert any unit
+							</p>
+						</div>
+						<div class="value__accordion">
+						<div class="value__accordion-item">
+							<header class="value__accordion-header">
+								<i class="bx bxs-x-square"></i>
+								<h3 class="value__accordion-title">
+									Not quantity, but quality
+								</h3>
+								<div class="value__accordion-arrow">
+								<i class="bx bxs-down-arrow"></i>
+								</div>
+							</header>
+							<div class="value__accordion-content">
+								<p class="value__accordion-description">
+									At UnitCalculators, we believe that when it comes to unit conversion, it's not just about quantity, but about quality as well. That's why our unit conversion site stands out from the rest. Our user-friendly interface and accurate calculations ensure that you get the precise conversions you need, every time. Plus, we offer a wide range of conversion categories, including length, weight, temperature, and more. Whether you're a student, professional, or just someone who needs to convert units on a daily basis, UnitCalculators is your go-to source for reliable and efficient conversions. So why settle for less when you can have quality? Try UnitCalculators today and experience the difference for yourself.
+								</p>
+							</div>
+							</div>
+						</div>
+						
+						<div class="value__accordion">
+						<div class="value__accordion-item">
+							<header class="value__accordion-header">
+								<i class="bx bxs-shield-x"></i>
+								<h3 class="value__accordion-title">
+									Prevent any miscalculation
+								</h3>
+								<div class="value__accordion-arrow">
+								<i class="bx bxs-down-arrow"></i>
+								</div>
+							</header>
+							<div class="value__accordion-content">
+								<p class="value__accordion-description">
+									At UnitCalculators, we understand the importance of accuracy when it comes to unit conversions. That's why we've designed our site to prevent any miscalculations. With our advanced algorithms and comprehensive database, you can trust that our conversions are reliable and precise. We also offer real-time results, so you can quickly and easily double-check your calculations. Additionally, our site is regularly updated to ensure that our conversions are up-to-date and accurate. Don't take chances with miscalculations - trust UnitCalculators for all your unit conversion needs.
+								</p>
+							</div>
+							</div>
+						</div>
+						
+						<div class="value__accordion">
+						<div class="value__accordion-item">
+							<header class="value__accordion-header">
+								<i class="bx bx-bar-chart-square"></i>
+								<h3 class="value__accordion-title">
+									Best calculators to convert units
+								</h3>
+								<div class="value__accordion-arrow">
+								<i class="bx bxs-down-arrow"></i>
+								</div>
+							</header>
+							<div class="value__accordion-content">
+								<p class="value__accordion-description">
+									UnitCalculators offers some of the best calculators to convert units. Our calculators are user-friendly and offer accurate results in real-time. Our site features a wide range of calculators that cover different categories such as length, weight, temperature, volume, and more. With our easy-to-use interface, you can quickly convert between different units without the hassle of manually calculating the conversion. Whether you're a student, professional, or just someone who needs to convert units regularly, our calculators are designed to meet your needs. Trust UnitCalculators for the best calculators to convert units and experience the ease and accuracy of our site today.
+								</p>
+							</div>
+							</div>
+						</div>
+						
+						<div class="value__accordion">
+						<div class="value__accordion-item">
+							<header class="value__accordion-header">
+								<i class="bx bxs-check-square"></i>
+								<h3 class="value__accordion-title">
+									Calculate with ease
+								</h3>
+								<div class="value__accordion-arrow">
+								<i class="bx bxs-down-arrow"></i>
+								</div>
+							</header>
+							<div class="value__accordion-content">
+								<p class="value__accordion-description">
+									At UnitCalculators, we believe that calculating should be easy and stress-free. That's why we've designed our site to make calculating with ease. Our user-friendly interface and intuitive design make it simple to convert between different units, no matter what category you're working in. We offer a wide range of conversion calculators, including length, weight, temperature, and more, all of which provide accurate results in real-time. With UnitCalculators, you can say goodbye to the frustration of manual calculations and let our site do the work for you. Whether you're a student, professional, or just someone who needs to calculate units regularly, our site is designed to make your life easier. Calculate with ease today on UnitCalculators.
+								</p>
+							</div>
+							</div>
+						</div>
+							 
+					</div>
+				</div>
+
+            </section>
+
+            <!--==================== CONTACT ====================-->
+            <section class="contact section" id="contact">
+      <div class="container2">
+    <div class="content2">
+      <div class="left-side">
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">unitcalculators0gmail.com</div>
+          <div class="text-two">unitcalculators0gmail.com</div>
+        </div>
+      </div>
+      <div class="right-side2">
+        <div class="topic-text">Send us a message</div>
+        <p>If you have any question or correction, send us a message.</p>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Enter your name">
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="Enter your email">
+        </div>
+        <div class="input-box message-box">
+          
+        </div>
+        <div class="button2">
+			<a href="mailto:unitcalculators0.gmail.com"><input type="button" value="Send Now" ></a>
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+            </section>
+
+            <!--==================== SUBSCRIBE ====================-->
+            <section class="subscribe section">
+                <div class="subscribe_container">
+					<h1 class="subscribe__title">
+					Support Us on Patreon</h1>
+					<p class="subscribe__description">
+					Your support will be appreciated, 
+					and we will be making more tools for our users
+					</p>
+					<a href="https://patreon.com/UnitCalculators?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link" class="button subscribe__button">Support Us</a>
+				</div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <h3>©2023 | UnitCalculators</h3>
+			<a href="https://www.flaticon.com/free-icons/length" title="length icons">Length icons created by Freepik - Flaticon</a>
+			<a href="https://www.flaticon.com/free-icons/weighing-scale" title="weighing scale icons">Weighing scale icons created by Good Ware - Flaticon</a>
+			<a href="https://www.flaticon.com/free-icons/volume" title="volume icons">Volume icons created by Creaticca Creative Agency - Flaticon</a>
+			<a href="https://www.flaticon.com/free-icons/measure" title="measure icons">Measure icons created by Flat Icons - Flaticon</a>
+			<a href="https://www.flaticon.com/free-icons/temperature" title="temperature icons">Temperature icons created by Freepik - Flaticon</a>
+			<a href="https://www.flaticon.com/free-icons/time" title="time icons">Time icons created by Freepik - Flaticon</a>
+        </footer>
+
+
+        <!--========== SCROLL UP ==========-->
+
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src=""></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="main.js"></script>
+    </body>
+</html>
+<!--=============== LENGTH CONVERTER JS ===============-->
+         <script src="force.js"></script>
